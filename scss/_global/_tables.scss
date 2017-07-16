@@ -1,0 +1,23 @@
+/*--------*/
+/* Tables */
+/*--------*/
+
+table {
+    width: 100%;
+    border: solid 1px $light-gray;
+    border-collapse: collapse;
+    border-color: rgba($medium-gray, 0.5);
+}
+
+tr:nth-child(even) {
+    background-color: rgba($medium-gray, 0.2);
+}
+
+th {
+    font-weight: $bold;
+}
+
+td, th {
+    vertical-align: top;
+    padding: 0.5rem;
+}

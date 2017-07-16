@@ -1,0 +1,42 @@
+/*------*/
+/* Grid */
+/*------*/
+
+.container {
+    @include display-flex;
+    @include flex-wrap(wrap);
+    max-width: $max-width;
+    margin-right: auto;
+    margin-left: auto;
+    
+    > * {
+        @include flex(0 1 100%);
+        min-width: 0;
+    }
+}
+
+.full-width {
+    @include flex(0 1 100%);
+}
+
+@include breakpoint($desktop-size) {
+    .half {
+        @include flex(0 1 50%);
+        width: 50%;
+    }
+    
+    .fourth {
+        @include flex(0 1 25%);
+        width: 25%;
+    }
+    
+    .third {
+        @include flex(0 1 (100% / 3));
+        width: 100% / 3;
+    }
+    
+    .two-thirds {
+        @include flex(0 1 (100% / 3 * 2));
+        width: 100% / 3 * 2;
+    }
+}

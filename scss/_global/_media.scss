@@ -1,0 +1,24 @@
+/*-------*/
+/* Media */
+/*-------*/
+
+iframe, img, svg {
+    max-width: 100%;
+}
+
+iframe {
+    display: block;
+}
+
+img, svg {
+    height: auto;
+}
+
+img {
+    display: inline-block;
+    height: auto;
+    
+    a & {
+        border: 0;
+    }
+}

@@ -1,0 +1,30 @@
+/*--------*/
+/* Global */
+/*--------*/
+
+html {
+    // Allows for rems to size similar to px
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #fff;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+main {
+    display: block;
+    
+    ul, ol {
+        margin-left: $space-unit;
+    }
+}
+
+section {
+    position: relative;
+    padding: $space-unit 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

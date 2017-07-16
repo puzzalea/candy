@@ -1,0 +1,126 @@
+/*-------*/
+/* Forms */
+/*-------*/
+
+label {
+    font-weight: $bold;
+    line-height: 1.5;
+}
+
+label, input, select, textarea {
+    font-family: $open-sans;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    
+    @include breakpoint($desktop-size) {
+        font-size: 1.8rem;
+    }
+}
+
+button, input, select, textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input, select, textarea {
+    width: 100%;
+    margin: 0.2rem 0 $text-space-unit 0;
+    padding: 0.5rem 1rem;
+    border: solid 1px $main-color;
+    @extend %default-border-radius;
+    background-color: #fff;
+    
+    &:focus {
+        border-color: #000;
+    }
+}
+
+input, select {
+    height: 3.8rem;
+}
+
+button, input[type='button'], input[type='submit'] {
+    @extend %button;
+    white-space: normal;
+    cursor: pointer;
+}
+
+input {
+    &[type='checkbox'], &[type='radio'], &[type='button'], &[type='submit'] {
+        width: auto;
+        height: auto;
+    }
+    
+    &[type='checkbox'], &[type='radio'] {
+        margin-right: $space-unit / 2;
+    }
+    
+    &[type='checkbox'] {
+        -webkit-appearance: checkbox;
+    }
+    
+    &[type='file'] {
+        padding: 0;
+        border: 0;
+        line-height: 1;
+    }
+    
+    &[type='radio'] {
+        -webkit-appearance: radio;
+    }
+}
+
+select {
+    background-image: url("data:image/svg+xml,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 18 30' enable-background='new 0 0 18 30' xml:space='preserve'><path fill='%23999999' d='M17.8,8.8c0,0.3-0.1,0.6-0.3,0.8c-0.2,0.2-0.5,0.3-0.8,0.3H1.3C1,9.9,0.8,9.7,0.6,9.5 C0.3,9.3,0.2,9.1,0.2,8.8c0-0.3,0.1-0.6,0.3-0.8l7.7-7.7C8.4,0.1,8.7,0,9,0c0.3,0,0.6,0.1,0.8,0.3L17.4,8 C17.7,8.2,17.8,8.5,17.8,8.8z'/><path fill='%23999999' d='M17.4,20.5c0.2,0.2,0.3,0.5,0.3,0.8c0,0.3-0.1,0.6-0.3,0.8l-7.7,7.7C9.6,29.9,9.3,30,9,30 c-0.3,0-0.6-0.1-0.8-0.3L0.6,22c-0.2-0.2-0.3-0.5-0.3-0.8c0-0.3,0.1-0.6,0.3-0.8c0.2-0.2,0.5-0.3,0.8-0.3h15.3 C17,20.1,17.2,20.3,17.4,20.5z'/></svg>");
+    background-position: right 4px center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    
+    &[multiple='multiple'] {
+        height: auto;
+        background-image: none;
+    }
+}
+
+textarea {
+    max-width: 100%;
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+    color: $medium-gray;
+}
+
+::-moz-placeholder {
+    font-style: italic;
+    color: $medium-gray;
+}
+
+:-ms-input-placeholder {
+    font-style: italic;
+    color: $medium-gray;
+}
+
+.form-error {
+    margin-bottom: $text-space-unit / 2;
+    border-color: $error;
+}
+
+.error-message {
+    margin-bottom: $text-space-unit / 2;
+    padding: 0.5rem;
+    background-color: $error;
+    color: #fff;
+    
+    p {
+        line-height: 1.5;
+    }
+    
+    p, li {
+        font-size: 1.4rem;
+        
+        @include breakpoint($desktop-size) {
+            font-size: 1.6rem;
+        }
+    }
+}

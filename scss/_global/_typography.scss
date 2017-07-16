@@ -1,0 +1,144 @@
+/*------------*/
+/* Typography */
+/*------------*/
+
+body, h1, h2, h3, h4, h5, h6, p, li, th, td {
+    font-family: $open-sans;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    &:first-child {
+        margin-top: 0;
+    }
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol {
+    margin: $text-space-unit 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: $text-space-unit * 2;
+    font-weight: $bold;
+    line-height: 1.2;
+    
+    + h1, + h2, + h3, + h4, + h5, + h6 {
+        margin-top: $text-space-unit;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h5 {
+    font-size: 1.4rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+body, p, li, th, td {
+    font-size: 1.4rem;
+}
+
+body, p, li, td {
+    font-weight: $normal;
+}
+
+p, li {
+    line-height: 1.75;
+}
+
+p, ul, ol {
+    margin: ($text-space-unit * 2) 0;
+}
+
+li {
+    margin: ($text-space-unit / 2) 0;
+}
+
+small {
+    font-size: 80%;
+}
+
+pre {
+    padding: $text-space-unit;
+    background-color: $light-gray;
+}
+
+hr {
+    margin: ($text-space-unit * 2) 0;
+    border: 0;
+    border-bottom: solid 1px $main-color;
+}
+
+a {
+    color: $link-color;
+    
+    &:hover, &:focus {
+        color: darken($link-color, 10%);
+    }
+}
+
+@include breakpoint($desktop-size) {
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: $text-space-unit * 3;
+    }
+    
+    h1 {
+        font-size: 5rem;
+    }
+    
+    h2 {
+        font-size: 4rem;
+    }
+    
+    h3 {
+        font-size: 2.6rem;
+    }
+    
+    h4 {
+        font-size: 2.1rem;
+    }
+    
+    h5 {
+        font-size: 1.8rem;
+    }
+    
+    h6 {
+        font-size: 1.4rem;
+    }
+    
+    body, p, li, th, td {
+        font-size: 1.8rem;
+    }
+    
+    body, p, li {
+        line-height: 2;
+    }
+    
+    hr {
+        margin: ($text-space-unit * 3) 0;
+    }
+}
