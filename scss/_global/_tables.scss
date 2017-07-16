@@ -4,18 +4,17 @@
 
 table {
     width: 100%;
-    border: solid 1px $light-gray;
+    border: 1px solid $main-color;
     border-collapse: collapse;
-    border-color: rgba($medium-gray, 0.5);
 }
 
 thead {
-    background-color: $dark-gray;
+    background-color: $main-color;
     color: #fff;
 }
 
 tr:nth-child(even) {
-    background-color: rgba($medium-gray, 0.2);
+    background-color: rgba($main-color, 0.15);
 }
 
 th {
