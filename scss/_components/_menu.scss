@@ -28,30 +28,48 @@ nav {
         margin: 0;
     }
     
+    .open-menu {
+        margin: 0 ($space-unit / 2) 0 0;
+        background-color: transparent;
+        text-transform: uppercase;
+        
+        &:hover, &:focus {
+            background-color: #fff;
+            color: $main-color;
+            outline: 0;
+        }
+    }
+    
+    > ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow-y: scroll;
+        width: 100%;
+        max-width: 300px;
+        padding: $space-unit 0;
+        background-color: $main-color;
+        @include transform(translate(100%, 0));
+        opacity: 0;
+        visibility: hidden;
+        
+        &.show-menu {
+            @include transform(translate(0, 0));
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    
     ul {
         list-style: none;
+        transition: visibility 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
         
         ul {
-            position: absolute;
-            visibility: hidden;
-            top: 100%;
-            right: 0;
-            z-index: 1;
-            width: 250px;
-            border: 2px solid #fff;
-            background-color: $main-color;
-            text-align: left;
-            @include box-shadow(0 2px 2px 0 rgba(#000, 0.05));
-            opacity: 0;
-            transition: visibility 0.4s ease, opacity 0.4s ease;
+            display: none;
+            background-color: rgba(#fff, 0.1);
             
-            &.show {
-                z-index: 2;
-                visibility: visible;
-                opacity: 1;
-            }
-            
-            li {
+            &.show-dropdown {
                 display: block;
             }
         }
@@ -59,7 +77,11 @@ nav {
     
     li {
         position: relative;
-        display: inline-block;
+        border-bottom: 1px solid rgba(#fff, 0.3);
+        
+        &:last-child {
+            border-bottom: 0;
+        }
     }
     
     a {
@@ -71,6 +93,56 @@ nav {
         &:hover, &:focus {
             background-color: #fff;
             color: $main-color;
+        }
+    }
+    
+    @include breakpoint($desktop-size) {
+        .open-menu {
+            display: none;
+        }
+        
+        > ul {
+            position: static;
+            overflow: visible;
+            padding: 0 ($space-unit / 2);
+            width: auto;
+            max-width: none;
+            background-color: transparent;
+            opacity: 1;
+            @include transform(none);
+            transition: none;
+            visibility: visible;
+        }
+        
+        ul {
+            ul {
+                position: absolute;
+                visibility: hidden;
+                top: 100%;
+                right: 0;
+                z-index: 1;
+                display: block;
+                width: 250px;
+                border: 2px solid #fff;
+                background-color: $main-color;
+                @include box-shadow(0 2px 2px 0 rgba(#000, 0.05));
+                opacity: 0;
+                
+                &.show-dropdown {
+                    z-index: 2;
+                    visibility: visible;
+                    opacity: 1;
+                }
+            
+                li {
+                    display: block;
+                }
+            }
+        }
+        
+        li {
+            display: inline-block;
+            border-bottom: 0;
         }
     }
 }

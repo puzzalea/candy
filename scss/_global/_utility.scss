@@ -166,3 +166,9 @@ $directions: top, right, bottom, left;
 .thick-underline {
     border-bottom: 5px solid #000;
 }
+
+/* Utility classes for typography */
+
+.uppercase {
+    text-transform: uppercase;
+}

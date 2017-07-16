@@ -15,6 +15,15 @@ jQuery('document').ready(function($) {
         return true;
     }
     
+    // Check if mobile width
+    var isMobileWidth = function() {
+        if ($nav.find('.menu > ul').css('position') === 'fixed') {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
     // Smooth scrolling
     $('a[href]').click(function(e) {
         var t = $(this),
@@ -69,6 +78,13 @@ jQuery('document').ready(function($) {
         $window.resize(adjustNav);
     }
     
+    // Mobile menu appearance
+    var $menuTrigger = $('.open-menu');
+    
+    $menuTrigger.click(function() {
+        $(this).siblings('ul').addClass('show-menu');
+    });
+    
     // Submenu appearance
     var $navSubMenuParent = $('.has-dropdown');
     
@@ -79,21 +95,26 @@ jQuery('document').ready(function($) {
         
         var $dropdown = $(this).children('ul');
         
-        if ($dropdown.hasClass('show')) {
-            $dropdown.removeClass('show');
+        if ($dropdown.hasClass('show-dropdown')) {
+            $dropdown.removeClass('show-dropdown');
         } else {
-            $dropdown.addClass('show');
+            $dropdown.addClass('show-dropdown');
             
             // Close other dropdowns
-            $('.has-dropdown ul.show').not($dropdown).removeClass('show');
+            $('.has-dropdown ul.show-dropdown').not($dropdown).removeClass('show-dropdown');
         }
     });
     
     // Close all dropdowns when the user clicks on something that is
     // not a dropdown
     $document.bind('click', function(e) {
-        if ($(e.target).closest('.has-dropdown').length === 0) {
-            $('.has-dropdown ul').removeClass('show');
+        if ($(e.target).closest('.has-dropdown').length === 0 && !isMobileWidth()) {
+            $('.has-dropdown ul').removeClass('show-dropdown');
+        }
+        
+        if ($(e.target).closest('.menu').length === 0 && isMobileWidth()) {
+            $('.menu > ul').removeClass('show-menu');
+            $('.has-dropdown ul').removeClass('show-dropdown');
         }
     });
     

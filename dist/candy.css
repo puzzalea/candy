@@ -238,13 +238,13 @@ label {
   line-height: 1.5;
 }
 
-label, input, select, textarea {
+label, input, select, textarea, button {
   font-family: "Open Sans", sans-serif;
   font-size: 1.4rem;
   line-height: 1.5;
 }
 @media all and (min-width: 768px) {
-  label, input, select, textarea {
+  label, input, select, textarea, button {
     font-size: 1.8rem;
   }
 }
@@ -470,35 +470,54 @@ nav {
 .menu h1, .menu h2, .menu h3, .menu h4, .menu h5, .menu h6, .menu p, .menu ul, .menu ol, .menu li {
   margin: 0;
 }
+.menu .open-menu {
+  margin: 0 1.5rem 0 0;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.menu .open-menu:hover, .menu .open-menu:focus {
+  background-color: #fff;
+  color: #4286f4;
+  outline: 0;
+}
+.menu > ul {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  width: 100%;
+  max-width: 300px;
+  padding: 3rem 0;
+  background-color: #4286f4;
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+  opacity: 0;
+  visibility: hidden;
+}
+.menu > ul.show-menu {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1;
+  visibility: visible;
+}
 .menu ul {
   list-style: none;
+  transition: visibility 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
 }
 .menu ul ul {
-  position: absolute;
-  visibility: hidden;
-  top: 100%;
-  right: 0;
-  z-index: 1;
-  width: 250px;
-  border: 2px solid #fff;
-  background-color: #4286f4;
-  text-align: left;
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
-  opacity: 0;
-  transition: visibility 0.4s ease, opacity 0.4s ease;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.1);
 }
-.menu ul ul.show {
-  z-index: 2;
-  visibility: visible;
-  opacity: 1;
-}
-.menu ul ul li {
+.menu ul ul.show-dropdown {
   display: block;
 }
 .menu li {
   position: relative;
-  display: inline-block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.menu li:last-child {
+  border-bottom: 0;
 }
 .menu a {
   display: block;
@@ -509,6 +528,50 @@ nav {
 .menu a:hover, .menu a:focus {
   background-color: #fff;
   color: #4286f4;
+}
+@media all and (min-width: 768px) {
+  .menu .open-menu {
+    display: none;
+  }
+  .menu > ul {
+    position: static;
+    overflow: visible;
+    padding: 0 1.5rem;
+    width: auto;
+    max-width: none;
+    background-color: transparent;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    transition: none;
+    visibility: visible;
+  }
+  .menu ul ul {
+    position: absolute;
+    visibility: hidden;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+    display: block;
+    width: 250px;
+    border: 2px solid #fff;
+    background-color: #4286f4;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+    opacity: 0;
+  }
+  .menu ul ul.show-dropdown {
+    z-index: 2;
+    visibility: visible;
+    opacity: 1;
+  }
+  .menu ul ul li {
+    display: block;
+  }
+  .menu li {
+    display: inline-block;
+    border-bottom: 0;
+  }
 }
 
 .has-dropdown > a {
@@ -1061,4 +1124,9 @@ input, select, textarea, button, input[type='button'], input[type='submit'], .bu
 
 .thick-underline {
   border-bottom: 5px solid #000;
+}
+
+/* Utility classes for typography */
+.uppercase {
+  text-transform: uppercase;
 }
