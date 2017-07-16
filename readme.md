@@ -1,4 +1,4 @@
-# Candy
+# [Candy](https://puzzalea.github.io/candy/)
 
 v.0.1.0
 
