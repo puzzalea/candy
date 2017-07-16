@@ -15,19 +15,6 @@ jQuery('document').ready(function($) {
         return true;
     }
     
-    // Fix anchor links causing a section to be covered by the nav on page load
-    var anchorLinkSection = window.location.hash;
-
-    if (navIsSticky && anchorLinkSection && isValidSelector(anchorLinkSection) && $(anchorLinkSection).length > 0) {
-        var navHeight = $nav.outerHeight();
-
-        $window.load(function() {
-            $('html, body').animate({
-               scrollTop: $(anchorLinkSection).offset().top - navHeight
-            }, 0);
-        });
-    }
-    
     // Smooth scrolling
     $('a[href]').click(function(e) {
         var t = $(this),
@@ -42,11 +29,11 @@ jQuery('document').ready(function($) {
                 
             e.preventDefault();
             
-            var navHeight = $nav.outerHeight();
+            var navOffset = navIsSticky ? $nav.outerHeight() : 0;
             
             $('html, body').animate({
-               scrollTop: $(section).offset().top - navHeight
-            }, 1500);
+               scrollTop: $(section).offset().top - navOffset
+            }, 1000);
         }
     });
 });
