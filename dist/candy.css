@@ -1,6 +1,6 @@
 /*!
- * Pretty Simple v0.1.0 by Puzzalea
- * Docs: https://github.com/puzzalea/pretty-simple
+ * Candy v0.1.0 by Puzzalea
+ * Docs: https://github.com/puzzalea/candy
  */
 /*--------*/
 /* Resets */
@@ -456,6 +456,14 @@ nav {
 .menu a:hover, .menu a:focus {
   background-color: #fff;
   color: #4286f4;
+}
+
+.sticky-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 /*-----------------*/

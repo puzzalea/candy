@@ -15,16 +15,8 @@ body {
 
 main {
     display: block;
-    
-    ul, ol {
-        margin-left: $space-unit;
-    }
 }
 
 section {
-    position: relative;
     padding: $space-unit 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }

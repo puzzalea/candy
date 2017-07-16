@@ -2,6 +2,9 @@
 /* Grid */
 /*------*/
 
+// Baby's first grid
+// Just one breakpoint and very simple class names
+
 .container {
     @include display-flex;
     @include flex-wrap(wrap);
@@ -10,13 +13,13 @@
     margin-left: auto;
     
     > * {
-        @include flex(0 1 100%);
-        min-width: 0;
+        @include flex(0 1 auto);
     }
 }
 
-.full-width {
+.full-width, .half, .fourth, .third, .two-thirds {
     @include flex(0 1 100%);
+    min-width: 0;
 }
 
 @include breakpoint($desktop-size) {

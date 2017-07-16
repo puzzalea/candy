@@ -6,6 +6,7 @@
 
 %button {
     display: inline-block;
+    margin: 0 0.5rem 0.5rem 0;
     padding: 1rem 2rem;
     border: 0;
     @extend %default-border-radius;
@@ -46,31 +47,43 @@ $directions: top, right, bottom, left;
 
 // Don't mind this scary bit of SASS. The outputted CSS might make more sense.
 //
-// This generates a bunch of utility classes, such as .add-margin,
-// .add-padding, .add-top-padding, .add-top-small-padding, etc.
+// This generates a bunch of utility classes, such as .margin,
+// .padding, .top-padding, .top-small-padding, etc.
 @each $box-model-part in $box-model {
-    .add-#{$box-model-part} {
+    // .margin, .padding
+    .#{$box-model-part} {
         #{$box-model-part}: $space-unit;
     }
     
-    @each $size, $space in $spacing {
-        .add-#{$size}-#{$box-model-part} {
-            #{$box-model-part}: $space;
+    @each $size, $size-value in $spacing {
+        // .small-margin, .large-margin, .small-padding, .large-padding
+        .#{$size}-#{$box-model-part} {
+            #{$box-model-part}: $size-value;
         }
         
         @each $direction in $directions {
-            .add-#{$direction}-#{$box-model-part} {
+            // .top-margin, .right-margin, etc.
+            .#{$direction}-#{$box-model-part} {
                 #{$box-model-part}-#{$direction}: $space-unit;
             }
             
-            .add-#{$size}-#{$direction}-#{$box-model-part} {
-                #{$box-model-part}-#{$direction}: $space;
+            // .small-top-margin, .small-right-margin, etc.
+            .#{$size}-#{$direction}-#{$box-model-part} {
+                #{$box-model-part}-#{$direction}: $size-value;
             }
         }
     }
 }
 
 /* Utility classes for colors */
+
+.white-background {
+    background-color: #fff;
+}
+
+.black-background {
+    background-color: #000;
+}
 
 .light-text {
     color: #fff;

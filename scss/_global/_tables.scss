@@ -9,6 +9,11 @@ table {
     border-color: rgba($medium-gray, 0.5);
 }
 
+thead {
+    background-color: $dark-gray;
+    color: #fff;
+}
+
 tr:nth-child(even) {
     background-color: rgba($medium-gray, 0.2);
 }
@@ -20,4 +25,9 @@ th {
 td, th {
     vertical-align: top;
     padding: 0.5rem;
+    line-height: 1.5;
+    
+    @include breakpoint($desktop-size) {
+        padding: 0.5rem 1rem;
+    }
 }

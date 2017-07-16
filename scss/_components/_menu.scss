@@ -1,0 +1,56 @@
+/*------*/
+/* Menu */
+/*------*/
+
+nav {
+    background-color: $main-color;
+}
+
+.menu {
+    @include display-flex;
+    @include align-items(center);
+    @include justify-content(space-between);
+    @include flex-wrap(wrap);
+    max-width: $max-width;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #fff;
+    
+    > * {
+        @include flex(0 1 auto);
+    }
+    
+    h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+        margin: 0;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    li {
+        display: inline-block;
+    }
+    
+    a {
+        display: block;
+        padding: 0.5rem 2rem;
+        color: #fff;
+        text-decoration: none;
+        
+        &:hover, &:focus {
+            background-color: #fff;
+            color: $main-color;
+        }
+    }
+}
+
+.sticky-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}

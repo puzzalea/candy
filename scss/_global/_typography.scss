@@ -74,6 +74,10 @@ p, ul, ol {
     margin: ($text-space-unit * 2) 0;
 }
 
+ul, ol {
+    margin-left: $space-unit;
+}
+
 li {
     margin: ($text-space-unit / 2) 0;
 }
