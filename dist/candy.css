@@ -437,7 +437,7 @@ a img {
 /* Menu */
 /*------*/
 nav {
-  background-color: #4286f4;
+  background-color: rgba(66, 134, 244, 0.97);
 }
 
 .menu {
@@ -515,7 +515,7 @@ nav {
 .has-dropdown > a {
   padding-right: 4rem;
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10'><polygon points='10 10 0 0 20 0 10 10' fill='%23CCCCCC'/></svg>");
-  background-position: right 10px center;
+  background-position: right 15px center;
   background-repeat: no-repeat;
   background-size: 10px 5px;
 }
