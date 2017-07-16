@@ -68,6 +68,17 @@ jQuery('document').ready(function($) {
         $window.scroll(adjustNav);
         $window.resize(adjustNav);
     }
+    
+    // Accordion hide and reveal
+    var $accordionHeadlines = $('.accordion-headline');
+
+    $accordionHeadlines.click(function() {
+        var $accordion = $(this).closest('.accordion'),
+            $content = $accordion.find('.accordion-content');
+        
+        $content.slideToggle(500);
+        $accordion.toggleClass('active-accordion');
+    });
 });
     
 /* Custom Modernizr build for detecting if the browser supports position sticky */

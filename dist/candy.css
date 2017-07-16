@@ -294,8 +294,9 @@ input[type='radio'] {
 }
 
 select {
-  background-image: url("data:image/svg+xml,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 18 30' enable-background='new 0 0 18 30' xml:space='preserve'><path fill='%23999999' d='M17.8,8.8c0,0.3-0.1,0.6-0.3,0.8c-0.2,0.2-0.5,0.3-0.8,0.3H1.3C1,9.9,0.8,9.7,0.6,9.5 C0.3,9.3,0.2,9.1,0.2,8.8c0-0.3,0.1-0.6,0.3-0.8l7.7-7.7C8.4,0.1,8.7,0,9,0c0.3,0,0.6,0.1,0.8,0.3L17.4,8 C17.7,8.2,17.8,8.5,17.8,8.8z'/><path fill='%23999999' d='M17.4,20.5c0.2,0.2,0.3,0.5,0.3,0.8c0,0.3-0.1,0.6-0.3,0.8l-7.7,7.7C9.6,29.9,9.3,30,9,30 c-0.3,0-0.6-0.1-0.8-0.3L0.6,22c-0.2-0.2-0.3-0.5-0.3-0.8c0-0.3,0.1-0.6,0.3-0.8c0.2-0.2,0.5-0.3,0.8-0.3h15.3 C17,20.1,17.2,20.3,17.4,20.5z'/></svg>");
-  background-position: right 4px center;
+  padding-right: 3rem;
+  background-image: url("data:image/svg+xml,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 18 30' enable-background='new 0 0 18 30' xml:space='preserve'><path fill='%23999999' d='M17.8,8.8c0,0.3-0.1,0.6-0.3,0.8c-0.2,0.2-0.5,0.3-0.8,0.3H1.3C1,9.9,0.8,9.7,0.6,9.5 C0.3,9.3,0.2,9.1,0.2,8.8c0-0.3,0.1-0.6,0.3-0.8l7.7-7.7C8.4,0.1,8.7,0,9,0c0.3,0,0.6,0.1,0.8,0.3L17.4,8 C17.7,8.2,17.8,8.5,17.8,8.8z'/><path fill='%23AAAAAA' d='M17.4,20.5c0.2,0.2,0.3,0.5,0.3,0.8c0,0.3-0.1,0.6-0.3,0.8l-7.7,7.7C9.6,29.9,9.3,30,9,30 c-0.3,0-0.6-0.1-0.8-0.3L0.6,22c-0.2-0.2-0.3-0.5-0.3-0.8c0-0.3,0.1-0.6,0.3-0.8c0.2-0.2,0.5-0.3,0.8-0.3h15.3 C17,20.1,17.2,20.3,17.4,20.5z'/></svg>");
+  background-position: right 10px center;
   background-repeat: no-repeat;
   background-size: 12px;
 }
@@ -401,6 +402,35 @@ img {
 }
 a img {
   border: 0;
+}
+
+/*------------*/
+/* Accordions */
+/*------------*/
+.accordion {
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+
+.accordion-headline {
+  padding: 1.5rem;
+  padding-right: 3rem;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10'><polygon points='10 10 0 0 20 0 10 10' fill='%23AAAAAA'/></svg>");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 20px 10px;
+  cursor: pointer;
+}
+.accordion-headline:hover, .accordion-headline:active, .active-accordion .accordion-headline {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.active-accordion .accordion-headline {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10'><polygon points='10 0 20 10 0 10 10 0' fill='%23AAAAAA'/></svg>");
+}
+
+.accordion-content {
+  display: none;
+  padding: 1.5rem;
 }
 
 /*------*/
