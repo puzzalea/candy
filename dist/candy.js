@@ -69,6 +69,34 @@ jQuery('document').ready(function($) {
         $window.resize(adjustNav);
     }
     
+    // Submenu appearance
+    var $navSubMenuParent = $('.has-dropdown');
+    
+    $navSubMenuParent.click(function(e) {
+        if ($(e.target).parent().hasClass('has-dropdown')) {
+            e.preventDefault();
+        }
+        
+        var $dropdown = $(this).children('ul');
+        
+        if ($dropdown.hasClass('show')) {
+            $dropdown.removeClass('show');
+        } else {
+            $dropdown.addClass('show');
+            
+            // Close other dropdowns
+            $('.has-dropdown ul.show').not($dropdown).removeClass('show');
+        }
+    });
+    
+    // Close all dropdowns when the user clicks on something that is
+    // not a dropdown
+    $document.bind('click', function(e) {
+        if ($(e.target).closest('.has-dropdown').length === 0) {
+            $('.has-dropdown ul').removeClass('show');
+        }
+    });
+    
     // Accordion hide and reveal
     var $accordionHeadlines = $('.accordion-headline');
 

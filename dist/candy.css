@@ -474,7 +474,31 @@ nav {
 .menu ul {
   list-style: none;
 }
+.menu ul ul {
+  position: absolute;
+  visibility: hidden;
+  top: 100%;
+  right: 0;
+  z-index: 1;
+  width: 250px;
+  border: 2px solid #fff;
+  background-color: #4286f4;
+  text-align: left;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  transition: visibility 0.4s ease, opacity 0.4s ease;
+}
+.menu ul ul.show {
+  z-index: 2;
+  visibility: visible;
+  opacity: 1;
+}
+.menu ul ul li {
+  display: block;
+}
 .menu li {
+  position: relative;
   display: inline-block;
 }
 .menu a {
@@ -486,6 +510,14 @@ nav {
 .menu a:hover, .menu a:focus {
   background-color: #fff;
   color: #4286f4;
+}
+
+.has-dropdown > a {
+  padding-right: 4rem;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10'><polygon points='10 10 0 0 20 0 10 10' fill='%23CCCCCC'/></svg>");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 10px 5px;
 }
 
 .sticky-nav {

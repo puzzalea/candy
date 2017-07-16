@@ -6,6 +6,8 @@ nav {
     background-color: $main-color;
 }
 
+// This menu just supports two levels of links -- the main links, and
+// their immediate dropdowns. Don't try to put dropdowns in dropdowns.
 .menu {
     @include display-flex;
     @include align-items(center);
@@ -28,9 +30,35 @@ nav {
     
     ul {
         list-style: none;
+        
+        ul {
+            position: absolute;
+            visibility: hidden;
+            top: 100%;
+            right: 0;
+            z-index: 1;
+            width: 250px;
+            border: 2px solid #fff;
+            background-color: $main-color;
+            text-align: left;
+            @include box-shadow(0 2px 2px 0 rgba(#000, 0.05));
+            opacity: 0;
+            transition: visibility 0.4s ease, opacity 0.4s ease;
+            
+            &.show {
+                z-index: 2;
+                visibility: visible;
+                opacity: 1;
+            }
+            
+            li {
+                display: block;
+            }
+        }
     }
     
     li {
+        position: relative;
         display: inline-block;
     }
     
@@ -45,6 +73,14 @@ nav {
             color: $main-color;
         }
     }
+}
+
+.has-dropdown > a {
+    padding-right: 4rem;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10'><polygon points='10 10 0 0 20 0 10 10' fill='%23CCCCCC'/></svg>");
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 10px 5px;
 }
 
 .sticky-nav {
