@@ -3,8 +3,7 @@
 /*-------*/
 
 label {
-    font-weight: $bold;
-    line-height: 1.5;
+    display: inline-block;
 }
 
 label, input, select, textarea, button {
@@ -57,6 +56,7 @@ input {
     
     &[type='checkbox'] {
         -webkit-appearance: checkbox;
+        -moz-appearance: checkbox;
     }
     
     &[type='file'] {
@@ -67,6 +67,7 @@ input {
     
     &[type='radio'] {
         -webkit-appearance: radio;
+        -moz-appearance: radio;
     }
 }
 
@@ -104,7 +105,11 @@ textarea {
 
 .form-error {
     margin-bottom: $text-space-unit / 2;
-    border-color: $error;
+    border: 1px solid $error;
+}
+
+label.form-error {
+    padding: 0 3px;
 }
 
 .error-message {

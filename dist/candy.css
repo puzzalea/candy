@@ -234,8 +234,7 @@ a:hover, a:focus {
 /* Forms */
 /*-------*/
 label {
-  font-weight: 700;
-  line-height: 1.5;
+  display: inline-block;
 }
 
 label, input, select, textarea, button {
@@ -283,6 +282,7 @@ input[type='checkbox'], input[type='radio'] {
 }
 input[type='checkbox'] {
   -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
 }
 input[type='file'] {
   padding: 0;
@@ -291,6 +291,7 @@ input[type='file'] {
 }
 input[type='radio'] {
   -webkit-appearance: radio;
+  -moz-appearance: radio;
 }
 
 select {
@@ -326,7 +327,11 @@ textarea {
 
 .form-error {
   margin-bottom: 0.5rem;
-  border-color: #f44242;
+  border: 1px solid #f44242;
+}
+
+label.form-error {
+  padding: 0 3px;
 }
 
 .error-message {
