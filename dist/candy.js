@@ -79,10 +79,18 @@ jQuery('document').ready(function($) {
     }
     
     // Mobile menu appearance
-    var $menuTrigger = $('.open-menu');
+    var $menuTrigger = $('.open-menu'),
+        $closeMenuTrigger = $('.close-menu');
     
     $menuTrigger.click(function() {
         $(this).siblings('ul').addClass('show-menu');
+        $closeMenuTrigger.addClass('show-close-menu');
+    });
+    
+    // Close mobile menu
+    $('.close-menu, .menu li:not(.has-dropdown) > a').click(function() {
+        $('.show-menu').removeClass('show-menu');
+        $closeMenuTrigger.removeClass('show-close-menu');
     });
     
     // Submenu appearance
@@ -115,6 +123,7 @@ jQuery('document').ready(function($) {
         if ($(e.target).closest('.menu').length === 0 && isMobileWidth()) {
             $('.menu > ul').removeClass('show-menu');
             $('.has-dropdown ul').removeClass('show-dropdown');
+            $('.close-menu').removeClass('show-close-menu');
         }
     });
     

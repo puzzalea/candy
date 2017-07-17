@@ -470,16 +470,6 @@ nav {
 .menu h1, .menu h2, .menu h3, .menu h4, .menu h5, .menu h6, .menu p, .menu ul, .menu ol, .menu li {
   margin: 0;
 }
-.menu .open-menu {
-  margin: 0 1.5rem 0 0;
-  background-color: transparent;
-  text-transform: uppercase;
-}
-.menu .open-menu:hover, .menu .open-menu:focus {
-  background-color: #fff;
-  color: #4286f4;
-  outline: 0;
-}
 .menu > ul {
   position: fixed;
   top: 0;
@@ -488,7 +478,7 @@ nav {
   overflow-y: scroll;
   width: 100%;
   max-width: 300px;
-  padding: 3rem 0;
+  padding: 6rem 0;
   background-color: #4286f4;
   -webkit-transform: translate(100%, 0);
   transform: translate(100%, 0);
@@ -530,9 +520,6 @@ nav {
   color: #4286f4;
 }
 @media all and (min-width: 768px) {
-  .menu .open-menu {
-    display: none;
-  }
   .menu > ul {
     position: static;
     overflow: visible;
@@ -574,6 +561,45 @@ nav {
   }
 }
 
+.open-menu, .close-menu {
+  padding-right: 4rem;
+  background-color: transparent;
+  background-position: right 15px center;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  text-transform: uppercase;
+}
+.open-menu:hover, .open-menu:focus, .close-menu:hover, .close-menu:focus {
+  background-color: #fff;
+  color: #4286f4;
+  outline: 0;
+}
+
+.open-menu {
+  margin: 0 1.5rem 0 0;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'><title>Untitled-2</title><rect width='10' height='2' fill='#CCCCCC'/><rect y='4' width='10' height='2' fill='#CCCCCC'/><rect y='8' width='10' height='2' fill='#CCCCCC'/></svg>");
+}
+
+.close-menu {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'><title>Untitled-2</title><polygon points='10 1.67 8.33 0 5 3.33 1.67 0 0 1.67 3.33 5 0 8.33 1.67 10 5 6.67 8.33 10 10 8.33 6.67 5 10 1.67' fill='#ccc'/></svg>");
+  opacity: 0;
+  transition: visibility 0.4s ease, opacity 0.4s ease;
+  visibility: hidden;
+}
+.close-menu.show-close-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media all and (min-width: 768px) {
+  .open-menu, .close-menu, .close-menu.show-close-menu {
+    display: none;
+  }
+}
 .has-dropdown > a {
   padding-right: 4rem;
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10'><polygon points='10 10 0 0 20 0 10 10' fill='%23CCCCCC'/></svg>");
