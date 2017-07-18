@@ -1,21 +1,28 @@
-/*!
- * Candy v0.1.0 by Puzzalea
- * Docs: https://github.com/puzzalea/candy
- */
+// Here are the colors you can edit to change the look of your site.
 
-@import '_abstractions/_colors';
-@import '_abstractions/_variables';
-@import '_abstractions/_mixins';
+// Don't delete these colors! Only change the values.
+$main-color: #4286f4;
+$link-color: #413aaa;
 
-@import '_global/_resets';
-@import '_global/_grid';
-@import '_global/_global';
-@import '_global/_typography';
-@import '_global/_forms';
-@import '_global/_tables';
-@import '_global/_media';
+// You can change these colors and number of colors in
+// this list, but don't delete the list entirely.
+//
+// This lets you have classes like .blue-background,
+// .green-text, .pink-button, etc.
+$colors: (
+    'blue': $main-color,
+    'light-blue': #d8e7ff,
+    'green': #39a851,
+    'light-green': #e2ffe9,
+    'pink': #f76cad,
+    'light-pink': #ffddea,
+    'purple': #8e40ce,
+    'light-purple': #f1e0ff
+);
 
-@import '_components/_accordion';
-@import '_components/_menu';
 
-@import '_global/_utility';
+// ------ That's it, you're done! Don't edit after this line. ------ //
+
+
+// Includes all the code magic you don't need to worry about. <3
+@import 'core/_core';
