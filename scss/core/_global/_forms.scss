@@ -39,7 +39,7 @@ input, select {
 }
 
 button, input[type='button'], input[type='submit'] {
-    @extend %button;
+    @extend %main-color-button;
     white-space: normal;
     cursor: pointer;
 }

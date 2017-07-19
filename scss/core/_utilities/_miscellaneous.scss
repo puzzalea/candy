@@ -1,0 +1,15 @@
+/*---------------*/
+/* Miscellaneous */
+/*---------------*/
+
+%default-border-radius {
+    border-radius: 5px;
+}
+
+.round-corners {
+    @extend %default-border-radius;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}

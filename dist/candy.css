@@ -622,31 +622,270 @@ nav {
   width: 100%;
 }
 
-/*-----------------*/
-/* Utility Classes */
-/*-----------------*/
+/*---------*/
 /* Buttons */
-button, input[type='button'], input[type='submit'], .button {
+/*---------*/
+button, input[type='button'], input[type='submit'], .button, .blue-button, .light-blue-button, .green-button, .light-green-button, .pink-button, .light-pink-button, .purple-button, .light-purple-button {
   display: inline-block;
   margin: 0 0.5rem 0.5rem 0;
   padding: 1rem 2rem;
   border: 0;
-  background-color: #4286f4;
   color: #fff;
   line-height: 1.5;
   text-align: center;
   text-decoration: none;
 }
-button:hover, input[type='button']:hover, input[type='submit']:hover, .button:hover, button:focus, input[type='button']:focus, input[type='submit']:focus, .button:focus {
-  background-color: #0d5cdd;
+button:hover, input[type='button']:hover, input[type='submit']:hover, .button:hover, .blue-button:hover, .light-blue-button:hover, .green-button:hover, .light-green-button:hover, .pink-button:hover, .light-pink-button:hover, .purple-button:hover, .light-purple-button:hover, button:focus, input[type='button']:focus, input[type='submit']:focus, .button:focus, .blue-button:focus, .light-blue-button:focus, .green-button:focus, .light-green-button:focus, .pink-button:focus, .light-pink-button:focus, .purple-button:focus, .light-purple-button:focus {
   color: #fff;
 }
 
-input, select, textarea, button, input[type='button'], input[type='submit'], .button, .round-corners {
+button, input[type='button'], input[type='submit'], .button {
+  background-color: #4286f4;
+}
+button:hover, input[type='button']:hover, input[type='submit']:hover, .button:hover, button:focus, input[type='button']:focus, input[type='submit']:focus, .button:focus {
+  background-color: #0d5cdd;
+}
+
+/*--------*/
+/* Colors */
+/*--------*/
+/* Backgrounds, text, buttons, and borders */
+.white-background {
+  background-color: #fff;
+}
+
+.black-background {
+  background-color: #000;
+}
+
+.light-text {
+  color: #fff;
+}
+.light-text a {
+  color: #fff;
+}
+.light-text a:hover, .light-text a:focus {
+  color: #ccc;
+}
+
+.dark-text {
+  color: #000;
+}
+
+.border {
+  border: 2px solid #000;
+}
+
+.underline {
+  border-bottom: 2px solid #000;
+}
+
+.white-border {
+  border: 2px solid #fff;
+}
+
+.white-underline {
+  border-bottom: 2px solid #fff;
+}
+
+.blue-background {
+  background-color: #4286f4;
+}
+
+.blue-text {
+  color: #4286f4;
+}
+
+.blue-button {
+  background-color: #4286f4;
+}
+.blue-button:hover, .blue-button:focus {
+  background-color: #0d5cdd;
+}
+
+.blue-border {
+  border: 2px solid #4286f4;
+}
+
+.blue-underline {
+  border-bottom: 2px solid #4286f4;
+}
+
+.light-blue-background {
+  background-color: #d8e7ff;
+}
+
+.light-blue-text {
+  color: #d8e7ff;
+}
+
+.light-blue-button {
+  background-color: #d8e7ff;
+}
+.light-blue-button:hover, .light-blue-button:focus {
+  background-color: #8cb8ff;
+}
+
+.light-blue-border {
+  border: 2px solid #d8e7ff;
+}
+
+.light-blue-underline {
+  border-bottom: 2px solid #d8e7ff;
+}
+
+.green-background {
+  background-color: #39a851;
+}
+
+.green-text {
+  color: #39a851;
+}
+
+.green-button {
+  background-color: #39a851;
+}
+.green-button:hover, .green-button:focus {
+  background-color: #266f35;
+}
+
+.green-border {
+  border: 2px solid #39a851;
+}
+
+.green-underline {
+  border-bottom: 2px solid #39a851;
+}
+
+.light-green-background {
+  background-color: #e2ffe9;
+}
+
+.light-green-text {
+  color: #e2ffe9;
+}
+
+.light-green-button {
+  background-color: #e2ffe9;
+}
+.light-green-button:hover, .light-green-button:focus {
+  background-color: #96ffaf;
+}
+
+.light-green-border {
+  border: 2px solid #e2ffe9;
+}
+
+.light-green-underline {
+  border-bottom: 2px solid #e2ffe9;
+}
+
+.pink-background {
+  background-color: #f76cad;
+}
+
+.pink-text {
+  color: #f76cad;
+}
+
+.pink-button {
+  background-color: #f76cad;
+}
+.pink-button:hover, .pink-button:focus {
+  background-color: #f32385;
+}
+
+.pink-border {
+  border: 2px solid #f76cad;
+}
+
+.pink-underline {
+  border-bottom: 2px solid #f76cad;
+}
+
+.light-pink-background {
+  background-color: #ffddea;
+}
+
+.light-pink-text {
+  color: #ffddea;
+}
+
+.light-pink-button {
+  background-color: #ffddea;
+}
+.light-pink-button:hover, .light-pink-button:focus {
+  background-color: #ff91bb;
+}
+
+.light-pink-border {
+  border: 2px solid #ffddea;
+}
+
+.light-pink-underline {
+  border-bottom: 2px solid #ffddea;
+}
+
+.purple-background {
+  background-color: #8e40ce;
+}
+
+.purple-text {
+  color: #8e40ce;
+}
+
+.purple-button {
+  background-color: #8e40ce;
+}
+.purple-button:hover, .purple-button:focus {
+  background-color: #66289a;
+}
+
+.purple-border {
+  border: 2px solid #8e40ce;
+}
+
+.purple-underline {
+  border-bottom: 2px solid #8e40ce;
+}
+
+.light-purple-background {
+  background-color: #f1e0ff;
+}
+
+.light-purple-text {
+  color: #f1e0ff;
+}
+
+.light-purple-button {
+  background-color: #f1e0ff;
+}
+.light-purple-button:hover, .light-purple-button:focus {
+  background-color: #ce94ff;
+}
+
+.light-purple-border {
+  border: 2px solid #f1e0ff;
+}
+
+.light-purple-underline {
+  border-bottom: 2px solid #f1e0ff;
+}
+
+/*---------------*/
+/* Miscellaneous */
+/*---------------*/
+input, select, textarea, button, input[type='button'], input[type='submit'], .button, .blue-button, .light-blue-button, .green-button, .light-green-button, .pink-button, .light-pink-button, .purple-button, .light-purple-button, .round-corners {
   border-radius: 5px;
 }
 
-/* Utility classes for spacing */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/*---------*/
+/* Spacing */
+/*---------*/
 .margin {
   margin: 3rem;
 }
@@ -797,368 +1036,4 @@ input, select, textarea, button, input[type='button'], input[type='submit'], .bu
 
 .large-left-padding {
   padding-left: 6rem;
-}
-
-/* Utility classes for colors */
-.white-background {
-  background-color: #fff;
-}
-
-.black-background {
-  background-color: #000;
-}
-
-.light-text {
-  color: #fff;
-}
-.light-text a {
-  color: #fff;
-}
-.light-text a:hover, .light-text a:focus {
-  color: #ccc;
-}
-
-.dark-text {
-  color: #000;
-}
-
-.blue-background {
-  background-color: #4286f4;
-}
-
-.blue-text {
-  color: #4286f4;
-}
-
-.blue-button {
-  background-color: #4286f4;
-}
-.blue-button:hover, .blue-button:focus {
-  background-color: #0d5cdd;
-}
-
-.blue-border {
-  border: 2px solid #4286f4;
-}
-
-.blue-underline {
-  border-bottom: 2px solid #4286f4;
-}
-
-.blue-thin-border {
-  border: 1px solid #4286f4;
-}
-
-.blue-thin-underline {
-  border-bottom: 1px solid #4286f4;
-}
-
-.blue-thick-border {
-  border: 5px solid #4286f4;
-}
-
-.blue-thick-underline {
-  border-bottom: 5px solid #4286f4;
-}
-
-.light-blue-background {
-  background-color: #d8e7ff;
-}
-
-.light-blue-text {
-  color: #d8e7ff;
-}
-
-.light-blue-button {
-  background-color: #d8e7ff;
-}
-.light-blue-button:hover, .light-blue-button:focus {
-  background-color: #8cb8ff;
-}
-
-.light-blue-border {
-  border: 2px solid #d8e7ff;
-}
-
-.light-blue-underline {
-  border-bottom: 2px solid #d8e7ff;
-}
-
-.light-blue-thin-border {
-  border: 1px solid #d8e7ff;
-}
-
-.light-blue-thin-underline {
-  border-bottom: 1px solid #d8e7ff;
-}
-
-.light-blue-thick-border {
-  border: 5px solid #d8e7ff;
-}
-
-.light-blue-thick-underline {
-  border-bottom: 5px solid #d8e7ff;
-}
-
-.green-background {
-  background-color: #39a851;
-}
-
-.green-text {
-  color: #39a851;
-}
-
-.green-button {
-  background-color: #39a851;
-}
-.green-button:hover, .green-button:focus {
-  background-color: #266f35;
-}
-
-.green-border {
-  border: 2px solid #39a851;
-}
-
-.green-underline {
-  border-bottom: 2px solid #39a851;
-}
-
-.green-thin-border {
-  border: 1px solid #39a851;
-}
-
-.green-thin-underline {
-  border-bottom: 1px solid #39a851;
-}
-
-.green-thick-border {
-  border: 5px solid #39a851;
-}
-
-.green-thick-underline {
-  border-bottom: 5px solid #39a851;
-}
-
-.light-green-background {
-  background-color: #e2ffe9;
-}
-
-.light-green-text {
-  color: #e2ffe9;
-}
-
-.light-green-button {
-  background-color: #e2ffe9;
-}
-.light-green-button:hover, .light-green-button:focus {
-  background-color: #96ffaf;
-}
-
-.light-green-border {
-  border: 2px solid #e2ffe9;
-}
-
-.light-green-underline {
-  border-bottom: 2px solid #e2ffe9;
-}
-
-.light-green-thin-border {
-  border: 1px solid #e2ffe9;
-}
-
-.light-green-thin-underline {
-  border-bottom: 1px solid #e2ffe9;
-}
-
-.light-green-thick-border {
-  border: 5px solid #e2ffe9;
-}
-
-.light-green-thick-underline {
-  border-bottom: 5px solid #e2ffe9;
-}
-
-.pink-background {
-  background-color: #f76cad;
-}
-
-.pink-text {
-  color: #f76cad;
-}
-
-.pink-button {
-  background-color: #f76cad;
-}
-.pink-button:hover, .pink-button:focus {
-  background-color: #f32385;
-}
-
-.pink-border {
-  border: 2px solid #f76cad;
-}
-
-.pink-underline {
-  border-bottom: 2px solid #f76cad;
-}
-
-.pink-thin-border {
-  border: 1px solid #f76cad;
-}
-
-.pink-thin-underline {
-  border-bottom: 1px solid #f76cad;
-}
-
-.pink-thick-border {
-  border: 5px solid #f76cad;
-}
-
-.pink-thick-underline {
-  border-bottom: 5px solid #f76cad;
-}
-
-.light-pink-background {
-  background-color: #ffddea;
-}
-
-.light-pink-text {
-  color: #ffddea;
-}
-
-.light-pink-button {
-  background-color: #ffddea;
-}
-.light-pink-button:hover, .light-pink-button:focus {
-  background-color: #ff91bb;
-}
-
-.light-pink-border {
-  border: 2px solid #ffddea;
-}
-
-.light-pink-underline {
-  border-bottom: 2px solid #ffddea;
-}
-
-.light-pink-thin-border {
-  border: 1px solid #ffddea;
-}
-
-.light-pink-thin-underline {
-  border-bottom: 1px solid #ffddea;
-}
-
-.light-pink-thick-border {
-  border: 5px solid #ffddea;
-}
-
-.light-pink-thick-underline {
-  border-bottom: 5px solid #ffddea;
-}
-
-.purple-background {
-  background-color: #8e40ce;
-}
-
-.purple-text {
-  color: #8e40ce;
-}
-
-.purple-button {
-  background-color: #8e40ce;
-}
-.purple-button:hover, .purple-button:focus {
-  background-color: #66289a;
-}
-
-.purple-border {
-  border: 2px solid #8e40ce;
-}
-
-.purple-underline {
-  border-bottom: 2px solid #8e40ce;
-}
-
-.purple-thin-border {
-  border: 1px solid #8e40ce;
-}
-
-.purple-thin-underline {
-  border-bottom: 1px solid #8e40ce;
-}
-
-.purple-thick-border {
-  border: 5px solid #8e40ce;
-}
-
-.purple-thick-underline {
-  border-bottom: 5px solid #8e40ce;
-}
-
-.light-purple-background {
-  background-color: #f1e0ff;
-}
-
-.light-purple-text {
-  color: #f1e0ff;
-}
-
-.light-purple-button {
-  background-color: #f1e0ff;
-}
-.light-purple-button:hover, .light-purple-button:focus {
-  background-color: #ce94ff;
-}
-
-.light-purple-border {
-  border: 2px solid #f1e0ff;
-}
-
-.light-purple-underline {
-  border-bottom: 2px solid #f1e0ff;
-}
-
-.light-purple-thin-border {
-  border: 1px solid #f1e0ff;
-}
-
-.light-purple-thin-underline {
-  border-bottom: 1px solid #f1e0ff;
-}
-
-.light-purple-thick-border {
-  border: 5px solid #f1e0ff;
-}
-
-.light-purple-thick-underline {
-  border-bottom: 5px solid #f1e0ff;
-}
-
-.border {
-  border: 2px solid #000;
-}
-
-.underline {
-  border-bottom: 2px solid #000;
-}
-
-.thin-border {
-  border: 1px solid #000;
-}
-
-.thin-underline {
-  border-bottom: 1px solid #000;
-}
-
-.thick-border {
-  border: 5px solid #000;
-}
-
-.thick-underline {
-  border-bottom: 5px solid #000;
-}
-
-/* Utility classes for typography */
-.uppercase {
-  text-transform: uppercase;
 }

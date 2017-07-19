@@ -1,0 +1,45 @@
+/*---------*/
+/* Spacing */
+/*---------*/
+
+$box-model: margin, padding;
+
+// $space-unit can be found in the main variables file (_abstractions/_variables)
+// It's over there instead of here because it gets used elsewhere throughout
+// the files.
+$spacing: (
+    small: $space-unit / 2,
+    large: $space-unit * 2
+);
+
+$directions: top, right, bottom, left;
+
+// Don't mind this scary bit of SASS. The outputted CSS might make more sense.
+//
+// This generates a bunch of utility classes, such as .margin,
+// .padding, .top-padding, .top-small-padding, etc.
+@each $box-model-part in $box-model {
+    // .margin, .padding
+    .#{$box-model-part} {
+        #{$box-model-part}: $space-unit;
+    }
+    
+    @each $size, $size-value in $spacing {
+        // .small-margin, .large-margin, .small-padding, .large-padding
+        .#{$size}-#{$box-model-part} {
+            #{$box-model-part}: $size-value;
+        }
+        
+        @each $direction in $directions {
+            // .top-margin, .right-margin, etc.
+            .#{$direction}-#{$box-model-part} {
+                #{$box-model-part}-#{$direction}: $space-unit;
+            }
+            
+            // .small-top-margin, .small-right-margin, etc.
+            .#{$size}-#{$direction}-#{$box-model-part} {
+                #{$box-model-part}-#{$direction}: $size-value;
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+/*--------*/
+/* Colors */
+/*--------*/
+
+/* Backgrounds, text, buttons, and borders */
+
+.white-background {
+    background-color: #fff;
+}
+
+.black-background {
+    background-color: #000;
+}
+
+.light-text {
+    color: #fff;
+    
+    a {
+        color: #fff;
+        
+        &:hover, &:focus {
+            color: #ccc;
+        }
+    }
+}
+
+.dark-text {
+    color: #000;
+}
+
+.border {
+    border: 2px solid #000;
+}
+
+.underline {
+    border-bottom: 2px solid #000;
+}
+
+.white-border {
+    border: 2px solid #fff;
+}
+
+.white-underline {
+    border-bottom: 2px solid #fff;
+}
+
+@each $name, $color in $colors {
+    .#{$name}-background {
+        background-color: $color;
+    }
+    
+    .#{$name}-text {
+        color: $color;
+    }
+    
+    .#{$name}-button {
+        @extend %button;
+        background-color: $color;
+        
+        &:hover, &:focus {
+            background-color: darken($color, 15%);
+        }
+    }
+    
+    .#{$name}-border {
+        border: 2px solid $color;
+    }
+    
+    .#{$name}-underline {
+        border-bottom: 2px solid $color;
+    }
+}

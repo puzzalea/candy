@@ -1,0 +1,32 @@
+/*---------*/
+/* Buttons */
+/*---------*/
+
+%button {
+    display: inline-block;
+    margin: 0 0.5rem 0.5rem 0;
+    padding: 1rem 2rem;
+    border: 0;
+    @extend %default-border-radius;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    
+    &:hover, &:focus {
+        color: #fff;
+    }
+}
+
+%main-color-button {
+    @extend %button;
+    background-color: $main-color;
+    
+    &:hover, &:focus {
+        background-color: darken($main-color, 15%);
+    }
+}
+
+.button {
+    @extend %main-color-button;
+}
