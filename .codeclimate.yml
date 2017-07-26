@@ -31,6 +31,8 @@ engines:
         style: include_zero
       PropertySortOrder:
         enabled: false
+      QualifyingElement:
+        enabled: false
       SingleLinePerSelector:
         enabled: false
       VendorPrefix:
