@@ -11,7 +11,7 @@
     max-width: $max-width;
     margin-right: auto;
     margin-left: auto;
-    
+
     > * {
         @include flex(0 1 auto);
     }
@@ -27,22 +27,22 @@
         @include flex(0 1 50%);
         width: 50%;
     }
-    
+
     .fourth {
         @include flex(0 1 25%);
         width: 25%;
     }
-    
+
     .three-fourths {
         @include flex(0 1 75%);
         width: 75%;
     }
-    
+
     .third {
         @include flex(0 1 (100% / 3));
         width: (100% / 3);
     }
-    
+
     .two-thirds {
         @include flex(0 1 (100% / 3 * 2));
         width: (100% / 3 * 2);
