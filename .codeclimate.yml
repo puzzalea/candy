@@ -28,8 +28,7 @@ engines:
       Indentation:
         enabled: false
       LeadingZero:
-        enabled: true
-        style: include_zero
+        enabled: false
       PropertySortOrder:
         enabled: false
       QualifyingElement:
