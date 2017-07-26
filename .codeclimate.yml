@@ -1,0 +1,28 @@
+engines:
+  csslint:
+    enabled: true
+    checks:
+      box-sizing:
+        enabled: false
+      compatible-vendor-prefixes:
+        enabled: false
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+  scss-lint:
+    enabled: true
+    exclude_paths:
+      - "**.css"
+    checks:
+      Comment:
+        enabled: false
+      Indentation:
+        enabled: false
+      SingleLinePerSelector:
+        enabled: false
+      VendorPrefix:
+        enabled: false
+ratings:
+  paths:
+    - "**/*"
