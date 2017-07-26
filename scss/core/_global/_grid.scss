@@ -40,11 +40,11 @@
     
     .third {
         @include flex(0 1 (100% / 3));
-        width: 100% / 3;
+        width: (100% / 3);
     }
     
     .two-thirds {
         @include flex(0 1 (100% / 3 * 2));
-        width: 100% / 3 * 2;
+        width: (100% / 3 * 2);
     }
 }

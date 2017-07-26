@@ -14,10 +14,10 @@
 
 .light-text {
     color: #fff;
-    
+
     a {
         color: #fff;
-        
+
         &:hover, &:focus {
             color: #ccc;
         }
@@ -48,24 +48,24 @@
     .#{$name}-background {
         background-color: $color;
     }
-    
+
     .#{$name}-text {
         color: $color;
     }
-    
+
     .#{$name}-button {
         @extend %button;
         background-color: $color;
-        
+
         &:hover, &:focus {
             background-color: darken($color, 15%);
         }
     }
-    
+
     .#{$name}-border {
         border: 2px solid $color;
     }
-    
+
     .#{$name}-underline {
         border-bottom: 2px solid $color;
     }

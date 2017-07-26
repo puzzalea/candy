@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
     &:first-child {
         margin-top: 0;
     }
-    
+
     &:last-child {
         margin-bottom: 0;
     }
@@ -25,11 +25,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: $text-space-unit * 2;
     font-weight: $header-font-weight;
     line-height: 1.2;
-    
+
     + h1, + h2, + h3, + h4, + h5, + h6 {
         margin-top: $text-space-unit;
     }
-    
+
     a {
         text-decoration: none;
     }
@@ -100,7 +100,7 @@ hr {
 
 a {
     color: $link-color;
-    
+
     &:hover, &:focus {
         color: darken($link-color, 10%);
     }
@@ -110,39 +110,39 @@ a {
     h1, h2, h3, h4, h5, h6 {
         margin-top: $text-space-unit * 3;
     }
-    
+
     h1 {
         font-size: 5rem;
     }
-    
+
     h2 {
         font-size: 4rem;
     }
-    
+
     h3 {
         font-size: 2.6rem;
     }
-    
+
     h4 {
         font-size: 2.1rem;
     }
-    
+
     h5 {
         font-size: 1.8rem;
     }
-    
+
     h6 {
         font-size: 1.4rem;
     }
-    
+
     body, p, li, th, td {
         font-size: 1.8rem;
     }
-    
+
     body, p, li {
         line-height: 2;
     }
-    
+
     hr {
         margin: ($text-space-unit * 3) 0;
     }

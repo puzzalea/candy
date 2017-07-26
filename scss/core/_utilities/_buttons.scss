@@ -12,7 +12,7 @@
     line-height: 1.5;
     text-align: center;
     text-decoration: none;
-    
+
     &:hover, &:focus {
         color: #fff;
     }
@@ -21,7 +21,7 @@
 %main-color-button {
     @extend %button;
     background-color: $main-color;
-    
+
     &:hover, &:focus {
         background-color: darken($main-color, 15%);
     }

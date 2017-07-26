@@ -6,6 +6,12 @@ engines:
         enabled: false
       compatible-vendor-prefixes:
         enabled: false
+      fallback-colors:
+        enabled: false
+      qualified-headings:
+        enabled: false
+      unique-headings:
+        enabled: false
   eslint:
     enabled: true
   fixme:

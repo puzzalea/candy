@@ -19,15 +19,15 @@ nav {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     color: #fff;
-    
+
     > * {
         @include flex(0 1 auto);
     }
-    
+
     h1, h2, h3, h4, h5, h6, p, ul, ol, li {
         margin: 0;
     }
-    
+
     > ul {
         position: fixed;
         top: 0;
@@ -41,49 +41,49 @@ nav {
         @include transform(translate(100%, 0));
         opacity: 0;
         visibility: hidden;
-        
+
         &.show-menu {
             @include transform(translate(0, 0));
             opacity: 1;
             visibility: visible;
         }
     }
-    
+
     ul {
         list-style: none;
         transition: visibility 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
-        
+
         ul {
             display: none;
             background-color: rgba(#fff, 0.1);
-            
+
             &.show-dropdown {
                 display: block;
             }
         }
     }
-    
+
     li {
         position: relative;
         border-bottom: 1px solid rgba(#fff, 0.3);
-        
+
         &:last-child {
             border-bottom: 0;
         }
     }
-    
+
     a {
         display: block;
         padding: 0.5rem 2rem;
         color: #fff;
         text-decoration: none;
-        
+
         &:hover, &:focus {
             background-color: #fff;
             color: $main-color;
         }
     }
-    
+
     @include breakpoint($desktop-size) {
         > ul {
             position: static;
@@ -97,7 +97,7 @@ nav {
             transition: none;
             visibility: visible;
         }
-        
+
         ul {
             ul {
                 position: absolute;
@@ -111,25 +111,25 @@ nav {
                 background-color: $main-color;
                 @include box-shadow(0 2px 2px 0 rgba(#000, 0.05));
                 opacity: 0;
-                
+
                 &.show-dropdown {
                     z-index: 2;
                     visibility: visible;
                     opacity: 1;
                 }
-            
+
                 li {
                     display: block;
                 }
             }
         }
-        
+
         li {
             display: inline-block;
             border-bottom: 0;
             font-size: 1.6rem;
         }
-        
+
         a {
             padding-right: 1.2rem;
             padding-left: 1.2rem;
@@ -144,7 +144,7 @@ nav {
     background-repeat: no-repeat;
     background-size: 15px 15px;
     text-transform: uppercase;
-    
+
     &:hover, &:focus {
         background-color: #fff;
         color: $main-color;
@@ -166,7 +166,7 @@ nav {
     opacity: 0;
     transition: visibility 0.4s ease, opacity 0.4s ease;
     visibility: hidden;
-    
+
     &.show-close-menu {
         display: block;
         opacity: 1;
@@ -186,7 +186,7 @@ nav {
     background-position: right 15px center;
     background-repeat: no-repeat;
     background-size: 10px 5px;
-    
+
     @include breakpoint($desktop-size) {
         padding-right: 3rem;
         background-position: right 10px center;

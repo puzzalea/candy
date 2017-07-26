@@ -15,11 +15,11 @@
     background-repeat: no-repeat;
     background-size: 20px 10px;
     cursor: pointer;
-    
+
     &:hover, &:active, .active-accordion & {
         background-color: rgba(#000, 0.05);
     }
-    
+
     .active-accordion & {
         background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10'><polygon points='10 0 20 10 0 10 10 0' fill='%23AAAAAA'/></svg>");
     }

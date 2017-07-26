@@ -10,7 +10,7 @@ label, input, select, textarea, button {
     font-family: $body-font;
     font-size: 1.4rem;
     line-height: 1.5;
-    
+
     @include breakpoint($desktop-size) {
         font-size: 1.8rem;
     }
@@ -28,7 +28,7 @@ input, select, textarea {
     border: solid 1px $main-color;
     @extend %default-border-radius;
     background-color: #fff;
-    
+
     &:focus {
         border-color: #000;
     }
@@ -49,22 +49,22 @@ input {
         width: auto;
         height: auto;
     }
-    
+
     &[type='checkbox'], &[type='radio'] {
         margin-right: $space-unit / 2;
     }
-    
+
     &[type='checkbox'] {
         -webkit-appearance: checkbox;
         -moz-appearance: checkbox;
     }
-    
+
     &[type='file'] {
         padding: 0;
         border: 0;
         line-height: 1;
     }
-    
+
     &[type='radio'] {
         -webkit-appearance: radio;
         -moz-appearance: radio;
@@ -77,7 +77,7 @@ select {
     background-position: right 10px center;
     background-repeat: no-repeat;
     background-size: 12px;
-    
+
     &[multiple='multiple'] {
         height: auto;
         background-image: none;
@@ -117,14 +117,14 @@ label.form-error {
     padding: 0.5rem 1rem;
     background-color: $error;
     color: #fff;
-    
+
     p {
         line-height: 1.5;
     }
-    
+
     &, p, li {
         font-size: 1.4rem;
-        
+
         @include breakpoint($desktop-size) {
             font-size: 1.6rem;
         }
