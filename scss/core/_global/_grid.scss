@@ -17,7 +17,7 @@
     }
 }
 
-.full-width, .half, .fourth, .third, .two-thirds {
+.full-width, .half, .fourth, .three-fourths, .third, .two-thirds {
     @include flex(0 1 100%);
     min-width: 0;
 }
@@ -31,6 +31,11 @@
     .fourth {
         @include flex(0 1 25%);
         width: 25%;
+    }
+    
+    .three-fourths {
+        @include flex(0 1 75%);
+        width: 75%;
     }
     
     .third {

@@ -1,14 +1,22 @@
-// Here are the colors you can edit to change the look of your site.
+//--------//
+// Colors //
+//--------//
 
 // Don't delete these variables! Only change the values.
+
+// The $main-color determines the default color of buttons,
+// the color of your input's borders, the color of tables,
+// and the color of the menu.
 $main-color: #4286f4;
+
+// $link-color is the color of your links! :)
 $link-color: #413aaa;
 
 // You can change these colors and number of colors in
 // this list, but don't delete the list entirely.
 //
 // This lets you have classes like .blue-background,
-// .green-text, .pink-button, etc.
+// .green-text, .pink-button, .purple-border, etc.
 $colors: (
     'blue': $main-color,
     'light-blue': #d8e7ff,
@@ -19,6 +27,28 @@ $colors: (
     'purple': #8e40ce,
     'light-purple': #f1e0ff
 );
+
+
+//-------//
+// Fonts //
+//-------//
+
+// Include webfonts if you need them
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i);
+
+// Set your header and body font families
+
+// The font for h1, h2, h3, h4, h5, & h6
+$header-font: 'Open Sans', sans-serif;
+
+// The font weight for your headlines
+// You should use a number here.
+// 300 - light, 400 - normal, 600 - semibold, 700 - bold
+// Make sure the font you're using has that weight before you put it here!
+$header-font-weight: 600;
+
+// The font for everything else (p, li, etc.)
+$body-font: 'Open Sans', sans-serif;
 
 
 // ------ That's it, you're done! Don't edit after this line. ------ //

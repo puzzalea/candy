@@ -2,8 +2,8 @@
 /* Typography */
 /*------------*/
 
-body, h1, h2, h3, h4, h5, h6, p, li, th, td {
-    font-family: $open-sans;
+body, p, li, th, td {
+    font-family: $body-font;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol {
@@ -21,8 +21,9 @@ h1, h2, h3, h4, h5, h6, ul, ol {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font;
     margin-top: $text-space-unit * 2;
-    font-weight: $bold;
+    font-weight: $header-font-weight;
     line-height: 1.2;
     
     + h1, + h2, + h3, + h4, + h5, + h6 {

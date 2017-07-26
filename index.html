@@ -4,7 +4,6 @@
     <title>Candy Framework</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="dist/candy.css" type="text/css" media="all">
     <script src="lib/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="dist/candy.js" type="text/javascript" charset="utf-8"></script>
@@ -22,12 +21,12 @@
         
         <nav class="main-nav sticky-nav">
             <div class="menu">
-                <h3 class="small-padding uppercase">C<span class="light-blue-text">a</span><span class="light-pink-text">n</span><span class="light-green-text">d</span><span class="light-purple-text">y</span></h3>
-                <button class="open-menu">Menu</button>
+                <h3 class="small-padding uppercase"><strong>C<span class="light-blue-text">a</span><span class="light-pink-text">n</span><span class="light-green-text">d</span><span class="light-purple-text">y</span></strong></h3>
                 <ul>
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#typography">Typography</a></li>
                     <li><a href="#grid">Grid</a></li>
+                    <li><a href="#margin-padding">Margin &amp; Padding</a></li>
                     <li class="has-dropdown">
                         <a href="#">Components</a>
                         <ul>
@@ -38,6 +37,7 @@
                         </ul>
                     </li>
                 </ul>
+                <button class="open-menu">Menu</button>
                 <button class="close-menu">Close</button>
             </div>
         </nav>
@@ -180,6 +180,37 @@
                         <div class="small-padding">
                             <p>Woah, look at this sidebar go. There is stuff over here that you can read but maybe not because it doesn't say anything.</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="margin-padding">
+            <div class="container">
+                <div class="full-width">
+                    <div class="small-padding">
+                        <h2 class="blue-underline small-bottom-padding">Margin &amp; Padding</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container small-left-padding small-right-padding">
+                <div class="half light-pink-background">
+                    <div class="small-padding small-margin pink-background light-text round-corners">
+                        <h3>Small padding, small margin</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container small-left-padding small-right-padding">
+                <div class="half light-green-background">
+                    <div class="padding margin green-background light-text round-corners">
+                        <h3>Normal padding, normal margin</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container small-left-padding small-right-padding">
+                <div class="half light-blue-background">
+                    <div class="large-padding large-margin blue-background light-text round-corners">
+                        <h3>Large padding, large margin</h3>
                     </div>
                 </div>
             </div>

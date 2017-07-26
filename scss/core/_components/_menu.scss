@@ -127,6 +127,12 @@ nav {
         li {
             display: inline-block;
             border-bottom: 0;
+            font-size: 1.6rem;
+        }
+        
+        a {
+            padding-right: 1.2rem;
+            padding-left: 1.2rem;
         }
     }
 }
@@ -180,6 +186,11 @@ nav {
     background-position: right 15px center;
     background-repeat: no-repeat;
     background-size: 10px 5px;
+    
+    @include breakpoint($desktop-size) {
+        padding-right: 3rem;
+        background-position: right 10px center;
+    }
 }
 
 .sticky-nav {

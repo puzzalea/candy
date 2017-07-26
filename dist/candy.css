@@ -1,5 +1,6 @@
-/*!
- * Candy v0.2.0 by Puzzalea
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i);
+/*
+ * Candy v0.3.0 by Puzzalea
  * Docs: https://github.com/puzzalea/candy
  */
 /*--------*/
@@ -32,7 +33,7 @@
   flex: 0 1 auto;
 }
 
-.full-width, .half, .fourth, .third, .two-thirds {
+.full-width, .half, .fourth, .three-fourths, .third, .two-thirds {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -52,6 +53,13 @@
     -ms-flex: 0 1 25%;
     flex: 0 1 25%;
     width: 25%;
+  }
+
+  .three-fourths {
+    -webkit-flex: 0 1 75%;
+    -ms-flex: 0 1 75%;
+    flex: 0 1 75%;
+    width: 75%;
   }
 
   .third {
@@ -92,7 +100,7 @@ section {
 /*------------*/
 /* Typography */
 /*------------*/
-body, h1, h2, h3, h4, h5, h6, p, li, th, td {
+body, p, li, th, td {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -108,8 +116,9 @@ h1, h2, h3, h4, h5, h6, ul, ol {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
   margin-top: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
 }
 h1 + h1, h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6, h2 + h1, h2 + h2, h2 + h3, h2 + h4, h2 + h5, h2 + h6, h3 + h1, h3 + h2, h3 + h3, h3 + h4, h3 + h5, h3 + h6, h4 + h1, h4 + h2, h4 + h3, h4 + h4, h4 + h5, h4 + h6, h5 + h1, h5 + h2, h5 + h3, h5 + h4, h5 + h5, h5 + h6, h6 + h1, h6 + h2, h6 + h3, h6 + h4, h6 + h5, h6 + h6 {
@@ -563,6 +572,11 @@ nav {
   .menu li {
     display: inline-block;
     border-bottom: 0;
+    font-size: 1.6rem;
+  }
+  .menu a {
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
   }
 }
 
@@ -612,6 +626,12 @@ nav {
   background-position: right 15px center;
   background-repeat: no-repeat;
   background-size: 10px 5px;
+}
+@media all and (min-width: 768px) {
+  .has-dropdown > a {
+    padding-right: 3rem;
+    background-position: right 10px center;
+  }
 }
 
 .sticky-nav {
@@ -881,6 +901,22 @@ input, select, textarea, button, input[type='button'], input[type='submit'], .bu
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.light-weight {
+  font-weight: 300;
+}
+
+.normal-weight {
+  font-weight: 400;
+}
+
+.semibold-weight {
+  font-weight: 600;
+}
+
+.bold-weight {
+  font-weight: 700;
 }
 
 /*---------*/
