@@ -1,6 +1,6 @@
 # [Candy](https://puzzalea.github.io/candy/)
 
-v.0.2.0
+v.1.0.0
 
 ## Introduction
 

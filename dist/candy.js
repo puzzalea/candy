@@ -1,3 +1,8 @@
+/*
+ * Candy v1.0.0 by Puzzalea
+ * Docs: https://github.com/puzzalea/candy
+ */
+
 jQuery('document').ready(function($) {
     var $document = $(document),
         $window = $(window),
