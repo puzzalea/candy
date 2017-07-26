@@ -173,7 +173,7 @@ If you'd like one of your links to have a dropdown, you would structure it like 
 
 - For the list item that you would like to have a dropdown, add the class `has-dropdown`.
 - Inside that `li`, add another unordered list with your additional links.
-- **Important note**: Once a list item is being used as a dropdown, you cannot use the immediate linke inside to link to anything. When the user clicks on it, it will only open the dropdown menu. It won't lead to whatever you try to link it to.
+- **Important note**: Once a list item is being used as a dropdown, you cannot use the immediate link inside to go to anything. When the user clicks on it, it will only open the dropdown menu. It won't lead to whatever you try to link it to.
 
 ### Accordions
 
