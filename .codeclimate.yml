@@ -23,7 +23,13 @@ engines:
     checks:
       Comment:
         enabled: false
+      DeclarationOrder:
+        enabled: false
       Indentation:
+        enabled: false
+      LeadingZero:
+        style: include_zero
+      PropertySortOrder:
         enabled: false
       SingleLinePerSelector:
         enabled: false

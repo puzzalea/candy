@@ -100,10 +100,6 @@ section {
 /*------------*/
 /* Typography */
 /*------------*/
-body, p, li, th, td {
-  font-family: "Open Sans", sans-serif;
-}
-
 h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, p:first-child, ul:first-child, ol:first-child {
   margin-top: 0;
 }
@@ -153,6 +149,7 @@ h6 {
 }
 
 body, p, li, th, td {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.4rem;
 }
 
