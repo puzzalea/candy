@@ -3,21 +3,21 @@
  * Docs: https://github.com/puzzalea/candy
  */
 
-@import '_abstractions/_variables';
-@import '_abstractions/_mixins';
+@import '_abstractions/variables';
+@import '_abstractions/mixins';
 
-@import '_global/_resets';
-@import '_global/_grid';
-@import '_global/_global';
-@import '_global/_typography';
-@import '_global/_forms';
-@import '_global/_tables';
-@import '_global/_media';
+@import '_global/resets';
+@import '_global/grid';
+@import '_global/global';
+@import '_global/typography';
+@import '_global/forms';
+@import '_global/tables';
+@import '_global/media';
 
-@import '_components/_accordion';
-@import '_components/_menu';
+@import '_components/accordion';
+@import '_components/menu';
 
-@import '_utilities/_buttons';
-@import '_utilities/_colors';
-@import '_utilities/_miscellaneous';
-@import '_utilities/_spacing';
+@import '_utilities/buttons';
+@import '_utilities/colors';
+@import '_utilities/miscellaneous';
+@import '_utilities/spacing';
