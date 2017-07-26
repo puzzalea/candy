@@ -2,11 +2,6 @@
 // Mixins //
 //--------//
 
-@mixin animation($animation) {
-    -webkit-animation: $animation;
-    animation: $animation;
-}
-
 @mixin box-shadow($shadow...) {
     -webkit-box-shadow: $shadow;
     box-shadow: $shadow;
@@ -19,30 +14,9 @@
     }
 }
 
-@mixin filter($filter) {
-    -webkit-filter: $filter;
-    filter: $filter;
-}
-
-@mixin keyframes($animation_name) {
-    @-webkit-keyframes #{$animation_name} {
-        @content;
-    }
-
-    @keyframes #{$animation_name} {
-        @content;
-    }
-}
-
 @mixin transform($property) {
     -webkit-transform: $property;
     transform: $property;
-}
-
-@mixin vertical-center-fix {
-    position: relative;
-    top: 50%;
-    @include transform(translate(0, -50%)  translateZ(0));
 }
 
 // Flexbox

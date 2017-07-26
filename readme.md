@@ -106,6 +106,13 @@ You can add colors to backgrounds of elements, text, borders, and buttons. This 
 - `blue-border` will add a 2px wide blue border on your element. If you just want to underline something, you can add the class `blue-underline` instead. If you don't specify a color and just add the class `border` or `underline`, the default color is black.
 - `green-button` will make a button green. The `button` class alone will make a button whatever you set your `$main-color` as. You can add the button classes on these tags: `<a>` (anchors, a.k.a. links), `<button>`, `<input type="submit">`, and `<input type="button">`.
 
+Aside from your custom colors, there are also built-in classes that make things white or black:
+
+- `white-background`, `black-background`
+- `light-text` (white), `dark-text` (black)
+- `white-border`, `border` (black)
+- `white-underline`, `underline` (black)
+
 ### Forms
 
 Candy's form fields have basic styles applied for you. If you would like to show that a field has an error, add the `form-error` class to the field for a red border. For error messages, add a `div` with the class `error-message` beneath the field with an error.
@@ -148,6 +155,26 @@ You can copy and paste this markup and adjust it for your logo and links. If you
 - For the links, list them in an unordered list after your logo/title.
 - Finally, we need two `button`s for the mobile menu to work. One has the class `open-menu` and will open your mobile menu when clicked. The other has the class `close-menu` and will let you close the menu once it's open. These will only be visible on small screens.
 
+#### Advanced menu usage
+
+If you'd like one of your links to have a dropdown, you would structure it like this:
+
+```html
+<li class="has-dropdown">
+  <a href="#">My dropdown link</a>
+  <ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="#">Link 4</a></li>
+  </ul>
+</li>
+```
+
+- For the list item that you would like to have a dropdown, add the class `has-dropdown`.
+- Inside that `li`, add another unordered list with your additional links.
+- **Important note**: Once a list item is being used as a dropdown, you cannot use the immediate linke inside to link to anything. When the user clicks on it, it will only open the dropdown menu. It won't lead to whatever you try to link it to.
+
 ### Accordions
 
 You can use accordions to hide and reveal content. Here's what the HTML looks like for this:
@@ -166,6 +193,18 @@ You can use accordions to hide and reveal content. Here's what the HTML looks li
 - First we have a `div` with the class `accordion`. These accordions don't have a background color by default, so you can make them whatever color you'd like by adding a background color class.
 - Inside are two more `div`s: these have the classes `accordion-headline` and `accordion-content`. Whatever you put inside `accordion-headline` will be visible to start, and when the user clicks it, `accordion-content` will become visible.
 
+### Other Stuff
+
+Here are other classes you can put on elements:
+
+- `rounded-corners` - adds rounded corners to your element
+- `uppercase` - makes content all caps
+- `light-weight`, `normal-weight`, `semibold-weight`, and `bold-weight` - changes the font weight of your content (as long as the font you're using has these weights)
+
 ### Demo
 
 To see examples of how to use this library, [check out the demo site](https://puzzalea.github.io/candy/)!
+
+## Questions? Comments?
+
+Make an issue if you need anything. ✧･ﾟ:*╰(◕‿◕｡╰)
