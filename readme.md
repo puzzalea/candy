@@ -24,10 +24,10 @@ This library assumes that you know HTML and CSS. We'll delve into just a tiny bi
 
 1. Clone this repo.
 1. Make sure you have SASS! This is a Ruby gem that is a preprocessor for CSS. Basically it lets you do fancier things than CSS alone, like use variables and functions. Install it through the command line:
-  - `gem install sass`
+    - `gem install sass`
 1. Open `scss/candy.scss` in your text editor. You'll see instructions here for how to customize your fonts and colors. This lets you have classes like `.blue-background`, `.green-text`, `.pink-button`, etc. but based on whatever colors you list here.
 1. To compile your SASS into regular CSS, change directories in command line to the `candy` directory and run the command below. This will `watch` the `scss` folder for changes to those files, and update the file in the `dist` folder (candy.css) with your updated CSS.
-  - `sass --watch scss:dist --style expanded  --sourcemap=none`
+    - `sass --watch scss:dist --style expanded  --sourcemap=none`
 
 If you want to add your own CSS beyond what Candy provides, you have a couple options:
 
@@ -197,7 +197,7 @@ You can use accordions to hide and reveal content. Here's what the HTML looks li
 
 Here are other classes you can put on elements:
 
-- `rounded-corners` - adds rounded corners to your element
+- `round-corners` - adds rounded corners to your element
 - `uppercase` - makes content all caps
 - `light-weight`, `normal-weight`, `semibold-weight`, and `bold-weight` - changes the font weight of your content (as long as the font you're using has these weights)
 
