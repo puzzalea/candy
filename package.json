@@ -1,0 +1,20 @@
+{
+	"name": "candy",
+	"version": "1.1.0",
+	"license": "GPL-3.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/puzzalea/candy.git"
+	},
+	"devDependencies": {
+		"grunt": "^1.0.1",
+		"grunt-banner": "^0.6.0",
+		"grunt-contrib-concat": "^0.5.1",
+		"grunt-contrib-sass": "^1.0.0",
+		"grunt-contrib-watch": "~0.6.0"
+	},
+	"js_files": [
+		"js/candy.js",
+		"js/modernizr.js"
+	]
+}
