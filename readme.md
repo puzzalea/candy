@@ -1,6 +1,8 @@
 # [Candy](https://puzzalea.github.io/candy/)
 
-v.1.0.0
+v.1.1.0
+
+[![Code Climate](https://codeclimate.com/github/puzzalea/candy/badges/gpa.svg)](https://codeclimate.com/github/puzzalea/candy)
 
 ## Introduction
 
