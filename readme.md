@@ -64,6 +64,8 @@ Candy has a wide variety of utility classes.
 
 To create the layout for a section of your page, first you need a `div` with the class `container`. Inside, you can put more `div`s with classes like `fourth`, `half`, and `three-fourths`, or `third` and `two-thirds`, which will determine how wide your content is. All these `div`s will stack on mobile/small screens, so these classes only affect the layout when your window is larger than 768px wide.
 
+Here's an example of the HTML for a three column layout with one half-width column and two fourth-width columns.
+
 ```html
 <div class="container">
   <div class="half">
@@ -74,6 +76,15 @@ To create the layout for a section of your page, first you need a `div` with the
   </div>
 </div>
 ```
+
+The full list of layout classes, which are hopefully self-explanatory:
+
+- `half`
+- `fourth`
+- `three-fourths`
+- `third`
+- `two-thirds`
+- `full-width`
 
 ### Margin/Padding
 
