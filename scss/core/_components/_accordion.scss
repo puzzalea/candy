@@ -28,4 +28,5 @@
 .accordion-content {
     display: none;
     padding: $space-unit / 2;
+    transition: height 0.4s ease, padding 0.4s ease;
 }

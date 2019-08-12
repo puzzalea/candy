@@ -6,6 +6,13 @@ nav {
     background-color: rgba($main-color, 0.97);
 }
 
+.main-nav {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
 // This menu just supports two levels of links -- the main links, and
 // their immediate dropdowns. Don't try to put dropdowns in dropdowns.
 .menu {
@@ -196,7 +203,4 @@ nav {
 .sticky-nav {
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
 }

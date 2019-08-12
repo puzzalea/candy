@@ -864,6 +864,7 @@ a img {
 .accordion-content {
   display: none;
   padding: 1.5rem;
+  transition: height 0.4s ease, padding 0.4s ease;
 }
 
 /*------*/
@@ -871,6 +872,13 @@ a img {
 /*------*/
 nav {
   background-color: rgba(66, 134, 244, 0.97);
+}
+
+.main-nav {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
 }
 
 .menu {
@@ -1040,7 +1048,4 @@ nav {
 .sticky-nav {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
 }

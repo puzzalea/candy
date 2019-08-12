@@ -36,8 +36,6 @@ If you want to add your own CSS beyond what Candy provides, you have a couple op
 - You can set your colors and fonts, and then include `dist/candy.css` in your project. Then create another CSS file where you write your custom code and include it _after_ the Candy file.
 - If you're comfortable working in SASS, you can include Candy's SASS files with your own SASS files and compile them into one CSS sheet.
 
-To make interactive elements work such as the navigation bar and accordions, you'll need `dist/candy.js` as well as some version of jQuery (Candy's JS is dependent on jQuery).
-
 The code you include in the head of your webpage should look something like this:
 
 ```html
@@ -46,10 +44,11 @@ The code you include in the head of your webpage should look something like this
 
 <!-- Optional custom CSS that you write -->
 <link rel="stylesheet" href="assets/dist/my-custom-css-maybe.css" type="text/css" media="all">
+```
 
-<!-- jQuery -->
-<script src="assets/lib/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+To make interactive elements work such as the navigation bar and accordions, you'll need to include `dist/candy.js` before the closing `</body>` tag:
 
+```
 <!-- Candy JS -->
 <script src="assets/dist/candy.js" type="text/javascript" charset="utf-8"></script>
 ```
