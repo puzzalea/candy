@@ -47,6 +47,12 @@
 @each $name, $color in $colors {
     .#{$name}-background {
         background-color: $color;
+
+        &.accordion {
+            .accordion-headline {
+                background-color: $color;
+            }
+        }
     }
 
     .#{$name}-text {

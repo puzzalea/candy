@@ -17,7 +17,7 @@
     cursor: pointer;
 
     &:hover, &:active, .active-accordion & {
-        background-color: rgba(#000, 0.05);
+        filter: brightness(0.95) saturate(1.5);
     }
 
     .active-accordion & {

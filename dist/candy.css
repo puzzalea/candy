@@ -79,6 +79,9 @@
 .blue-background {
   background-color: #4286f4;
 }
+.blue-background.accordion .accordion-headline {
+  background-color: #4286f4;
+}
 
 .blue-text {
   color: #4286f4;
@@ -100,6 +103,9 @@
 }
 
 .light-blue-background {
+  background-color: #d8e7ff;
+}
+.light-blue-background.accordion .accordion-headline {
   background-color: #d8e7ff;
 }
 
@@ -125,6 +131,9 @@
 .green-background {
   background-color: #39a851;
 }
+.green-background.accordion .accordion-headline {
+  background-color: #39a851;
+}
 
 .green-text {
   color: #39a851;
@@ -146,6 +155,9 @@
 }
 
 .light-green-background {
+  background-color: #e2ffe9;
+}
+.light-green-background.accordion .accordion-headline {
   background-color: #e2ffe9;
 }
 
@@ -171,6 +183,9 @@
 .pink-background {
   background-color: #f76cad;
 }
+.pink-background.accordion .accordion-headline {
+  background-color: #f76cad;
+}
 
 .pink-text {
   color: #f76cad;
@@ -192,6 +207,9 @@
 }
 
 .light-pink-background {
+  background-color: #ffddea;
+}
+.light-pink-background.accordion .accordion-headline {
   background-color: #ffddea;
 }
 
@@ -217,6 +235,9 @@
 .purple-background {
   background-color: #8e40ce;
 }
+.purple-background.accordion .accordion-headline {
+  background-color: #8e40ce;
+}
 
 .purple-text {
   color: #8e40ce;
@@ -238,6 +259,9 @@
 }
 
 .light-purple-background {
+  background-color: #f1e0ff;
+}
+.light-purple-background.accordion .accordion-headline {
   background-color: #f1e0ff;
 }
 
@@ -855,7 +879,7 @@ a img {
   cursor: pointer;
 }
 .accordion-headline:hover, .accordion-headline:active, .active-accordion .accordion-headline {
-  background-color: rgba(0, 0, 0, 0.05);
+  filter: brightness(0.95) saturate(1.5);
 }
 .active-accordion .accordion-headline {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10'><polygon points='10 0 20 10 0 10 10 0' fill='%23AAAAAA'/></svg>");
