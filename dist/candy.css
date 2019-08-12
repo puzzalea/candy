@@ -343,72 +343,56 @@
   margin: 3rem;
 }
 
-.small-margin {
-  margin: 1.5rem;
-}
-
 .top-margin {
   margin-top: 3rem;
-}
-
-.small-top-margin {
-  margin-top: 1.5rem;
 }
 
 .right-margin {
   margin-right: 3rem;
 }
 
-.small-right-margin {
-  margin-right: 1.5rem;
-}
-
 .bottom-margin {
   margin-bottom: 3rem;
-}
-
-.small-bottom-margin {
-  margin-bottom: 1.5rem;
 }
 
 .left-margin {
   margin-left: 3rem;
 }
 
-.small-left-margin {
-  margin-left: 1.5rem;
+.small-margin {
+  margin: 1.5rem;
 }
 
 .large-margin {
   margin: 6rem;
 }
 
-.top-margin {
-  margin-top: 3rem;
+.small-top-margin {
+  margin-top: 1.5rem;
+}
+
+.small-right-margin {
+  margin-right: 1.5rem;
+}
+
+.small-bottom-margin {
+  margin-bottom: 1.5rem;
+}
+
+.small-left-margin {
+  margin-left: 1.5rem;
 }
 
 .large-top-margin {
   margin-top: 6rem;
 }
 
-.right-margin {
-  margin-right: 3rem;
-}
-
 .large-right-margin {
   margin-right: 6rem;
 }
 
-.bottom-margin {
-  margin-bottom: 3rem;
-}
-
 .large-bottom-margin {
   margin-bottom: 6rem;
-}
-
-.left-margin {
-  margin-left: 3rem;
 }
 
 .large-left-margin {
@@ -419,72 +403,56 @@
   padding: 3rem;
 }
 
-.small-padding {
-  padding: 1.5rem;
-}
-
 .top-padding {
   padding-top: 3rem;
-}
-
-.small-top-padding {
-  padding-top: 1.5rem;
 }
 
 .right-padding {
   padding-right: 3rem;
 }
 
-.small-right-padding {
-  padding-right: 1.5rem;
-}
-
 .bottom-padding {
   padding-bottom: 3rem;
-}
-
-.small-bottom-padding {
-  padding-bottom: 1.5rem;
 }
 
 .left-padding {
   padding-left: 3rem;
 }
 
-.small-left-padding {
-  padding-left: 1.5rem;
+.small-padding {
+  padding: 1.5rem;
 }
 
 .large-padding {
   padding: 6rem;
 }
 
-.top-padding {
-  padding-top: 3rem;
+.small-top-padding {
+  padding-top: 1.5rem;
+}
+
+.small-right-padding {
+  padding-right: 1.5rem;
+}
+
+.small-bottom-padding {
+  padding-bottom: 1.5rem;
+}
+
+.small-left-padding {
+  padding-left: 1.5rem;
 }
 
 .large-top-padding {
   padding-top: 6rem;
 }
 
-.right-padding {
-  padding-right: 3rem;
-}
-
 .large-right-padding {
   padding-right: 6rem;
 }
 
-.bottom-padding {
-  padding-bottom: 3rem;
-}
-
 .large-bottom-padding {
   padding-bottom: 6rem;
-}
-
-.left-padding {
-  padding-left: 3rem;
 }
 
 .large-left-padding {
