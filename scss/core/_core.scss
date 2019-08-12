@@ -5,7 +5,14 @@
 @import '_abstractions/mixins';
 
 @import '_global/resets';
-@import '_global/grid';
+
+@import '_utilities/buttons';
+@import '_utilities/colors';
+@import '_utilities/grid';
+@import '_utilities/miscellaneous';
+@import '_utilities/spacing';
+@import '_utilities/typography';
+
 @import '_global/global';
 @import '_global/typography';
 @import '_global/forms';
@@ -14,8 +21,3 @@
 
 @import '_components/accordion';
 @import '_components/menu';
-
-@import '_utilities/buttons';
-@import '_utilities/colors';
-@import '_utilities/miscellaneous';
-@import '_utilities/spacing';

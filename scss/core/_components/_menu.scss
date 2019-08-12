@@ -9,10 +9,10 @@ nav {
 // This menu just supports two levels of links -- the main links, and
 // their immediate dropdowns. Don't try to put dropdowns in dropdowns.
 .menu {
-    @include display-flex;
-    @include align-items(center);
-    @include justify-content(space-between);
-    @include flex-wrap(wrap);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     max-width: $max-width;
     margin-right: auto;
     margin-left: auto;
@@ -21,7 +21,7 @@ nav {
     color: #fff;
 
     > * {
-        @include flex(0 1 auto);
+        flex: 0 1 auto;
     }
 
     h1, h2, h3, h4, h5, h6, p, ul, ol, li {
@@ -38,12 +38,12 @@ nav {
         max-width: 300px;
         padding: ($space-unit * 2) 0;
         background-color: $main-color;
-        @include transform(translate(100%, 0));
+        transform: translate(100%, 0);
         opacity: 0;
         visibility: hidden;
 
         &.show-menu {
-            @include transform(translate(0, 0));
+            transform: translate(0, 0);
             opacity: 1;
             visibility: visible;
         }
@@ -93,7 +93,7 @@ nav {
             max-width: none;
             background-color: transparent;
             opacity: 1;
-            @include transform(none);
+            transform: none;
             transition: none;
             visibility: visible;
         }
@@ -109,7 +109,7 @@ nav {
                 width: 250px;
                 border: 2px solid #fff;
                 background-color: $main-color;
-                @include box-shadow(0 2px 2px 0 rgba(#000, 0.05));
+                box-shadow: 0 2px 2px 0 rgba(#000, 0.05);
                 opacity: 0;
 
                 &.show-dropdown {

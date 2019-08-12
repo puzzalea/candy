@@ -9,23 +9,3 @@
 .round-corners {
     @extend %default-border-radius;
 }
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.light-weight {
-    font-weight: $light;
-}
-
-.normal-weight {
-    font-weight: $normal;
-}
-
-.semibold-weight {
-    font-weight: $semibold;
-}
-
-.bold-weight {
-    font-weight: $bold;
-}

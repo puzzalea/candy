@@ -5,16 +5,65 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="dist/candy.css" type="text/css" media="all">
+    <style>
+        .candy-piece {
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: repeating-linear-gradient(
+              45deg,
+              #fff,
+              #fff 20px,
+              #d8e7ff 20px,
+              #d8e7ff 40px,
+              #ffddea 40px,
+              #ffddea 60px,
+              #e2ffe9 60px,
+              #e2ffe9 80px,
+              #f1e0ff 80px,
+              #f1e0ff 100px
+            );
+        }
+
+        .candy-piece::before {
+            position: absolute;
+            top: 10px;
+            right: calc(100% + 10px);
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 40px solid transparent;
+            border-bottom: 40px solid transparent;
+            border-left: 40px solid #fff;
+            content: '';
+        }
+
+        .candy-piece::after {
+            position: absolute;
+            top: 10px;
+            left: calc(100% + 10px);
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 40px solid transparent;
+            border-bottom: 40px solid transparent;
+            border-right: 40px solid #fff;
+            content: '';
+        }
+    </style>
     <script src="lib/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="dist/candy.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
     <main>
-        <section id="intro" class="light-purple-background large-top-padding large-bottom-padding">
+        <section id="intro" class="purple-background large-top-padding large-bottom-padding">
             <div class="container small-padding">
-                <div class="full-width">
-                    <h1 class="purple-text purple-underline small-bottom-padding bottom-margin">Candy</h1>
-                    <p>A simple and sweet UI framework by <a href="https://github.com/puzzalea/candy" target="_blank">Puzzalea</a>.</p>
+                <div class="full-width center-text large-top-padding large-bottom-padding">
+                    <div class="candy-piece"></div>
+                    <h1 class="uppercase"><strong><span class="light-text">C</span><span class="light-blue-text">a</span><span class="light-pink-text">n</span><span class="light-green-text">d</span><span class="light-purple-text">y</span></strong></h1>
+                    <h4 class="light-text normal-weight">A simple and sweet UI framework by <a href="https://github.com/puzzalea/candy" target="_blank">Puzzalea</a></p>
                 </div>
             </div>
         </section>

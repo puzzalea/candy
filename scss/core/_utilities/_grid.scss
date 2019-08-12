@@ -6,45 +6,45 @@
 // Just one breakpoint and very simple class names
 
 .container {
-    @include display-flex;
-    @include flex-wrap(wrap);
+    display: flex;
+    flex-wrap: wrap;
     max-width: $max-width;
     margin-right: auto;
     margin-left: auto;
 
     > * {
-        @include flex(0 1 auto);
+        flex: 0 1 auto;
     }
 }
 
 .full-width, .half, .fourth, .three-fourths, .third, .two-thirds {
-    @include flex(0 1 100%);
+    flex: 0 1 100%;
     min-width: 0;
 }
 
 @include breakpoint($desktop-size) {
     .half {
-        @include flex(0 1 50%);
+        flex-basis: 50%;
         width: 50%;
     }
 
     .fourth {
-        @include flex(0 1 25%);
+        flex-basis: 25%;
         width: 25%;
     }
 
     .three-fourths {
-        @include flex(0 1 75%);
+        flex-basis: 75%;
         width: 75%;
     }
 
     .third {
-        @include flex(0 1 (100% / 3));
+        flex-basis: (100% / 3);
         width: (100% / 3);
     }
 
     .two-thirds {
-        @include flex(0 1 (100% / 3 * 2));
+        flex-basis: (100% / 3 * 2);
         width: (100% / 3 * 2);
     }
 }

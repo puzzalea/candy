@@ -16,10 +16,10 @@
     color: #fff;
 
     a {
-        color: #fff;
+        color: rgba(#fff, 0.8);
 
         &:hover, &:focus {
-            color: #ccc;
+            color: #fff;
         }
     }
 }
