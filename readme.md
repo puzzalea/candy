@@ -6,7 +6,7 @@ v.1.1.0
 
 ## Introduction
 
-Candy is a simple and sweet UI framework by [Puzzalea](https://github.com/puzzalea) (a.k.a. [Cara](https://github.com/caraheacock)).
+Candy is a simple and sweet UI framework by [Puzzalea](https://github.com/puzzalea) (a.k.a. [Cara](https://github.com/caramiki)).
 
 Candy was first conceptualized as a framework for [Omaha Girls Who Code](https://github.com/OmahaGirlsWhoCode). We found that our students--generally between the ages of 12 to 18--were having trouble grasping more complex frameworks such as Bootstrap and Foundation, and as much as we love having them experiment and learning CSS on their own, we don't want them to get too distracted fussing with the frontend while we are also teaching them backend programming. Thus this framework was created as a starting point for them to add their own flair on top of it.
 
@@ -213,6 +213,7 @@ Here are other classes you can put on elements:
 - `round-corners` - adds rounded corners to your element
 - `uppercase` - makes content all caps
 - `light-weight`, `normal-weight`, `semibold-weight`, and `bold-weight` - changes the font weight of your content (as long as the font you're using has these weights)
+- `left-align`, `right-align`, `center-align` - changes the text alignment
 
 ### Demo
 
