@@ -1,4 +1,4 @@
-/*! Candy v1.1.0 by Puzzalea
+/*! Candy v2.0.0 by Puzzalea
     Docs: https://github.com/puzzalea/candy */
 
 /* Custom Modernizr build for detecting if the browser supports position sticky */

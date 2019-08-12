@@ -1,6 +1,6 @@
 # [Candy](https://puzzalea.github.io/candy/)
 
-v.1.1.0
+v.2.0.0
 
 [![Code Climate](https://codeclimate.com/github/puzzalea/candy/badges/gpa.svg)](https://codeclimate.com/github/puzzalea/candy)
 
@@ -19,6 +19,10 @@ Candy was first conceptualized as a framework for [Omaha Girls Who Code](https:/
 - Reseting and styling for form elements -- inputs, buttons, selects, and textareas
 - Utility classes for margin, padding, and borders
 - Components such as buttons, menu, and accordions
+
+## Browser Support
+
+Candy supports modern browsers (Chrome, Edge, Firefox, Safari, etc.). Candy no longer supports Internet Explorer as of v.2.0.0.
 
 ## Setup
 
@@ -95,7 +99,7 @@ To add space between things, you have classes available that adjust the margin a
 - `padding` works the same way except it adds padding around your element
   - examples: `large-padding` adds 60px of padding all around, `top-padding` adds 30px of padding on top, `small-right-padding` adds 15px of padding on the right
 
-**Important note**: Do not add these classes directly on your layout columns (the `half`, `third`, etc. elements). Adding margin will make your sections not fit in their `container` because of the extra space inbetween. Adding padding works in most browsers but is buggy in Internet Explorer. If you don't care about IE, go for it! If you want to be safe, add another `div` inside your layout `div` for margin/padding.
+**Important note**: Do not add margin classes directly on your layout columns (the `half`, `third`, etc. elements). Adding margin will make your sections not fit in their `container` because of the extra space inbetween.
 
 Example:
 
