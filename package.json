@@ -7,14 +7,15 @@
 		"url": "https://github.com/puzzalea/candy.git"
 	},
 	"devDependencies": {
-		"grunt": "^1.0.1",
+		"grunt": "^1.0.4",
 		"grunt-banner": "^0.6.0",
-		"grunt-contrib-concat": "^0.5.1",
+		"grunt-contrib-concat": "^1.0.1",
 		"grunt-contrib-sass": "^1.0.0",
-		"grunt-contrib-watch": "~0.6.0"
+		"grunt-contrib-watch": "^1.1.0"
 	},
 	"js_files": [
 		"js/candy.js",
 		"js/modernizr.js"
-	]
+	],
+	"dependencies": {}
 }
